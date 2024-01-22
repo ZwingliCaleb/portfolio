@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.scss'
-import logo from './src/assets/images/header_logo.png'
+import logo from '../src/assets/images/header_logo.png'
 function Header() {
   return (
     <div>
