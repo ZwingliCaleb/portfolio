@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Header.scss'
 function Header() {
   return (
     <div>
@@ -7,7 +7,7 @@ function Header() {
         <nav>
             <ul>
                 <li><a href="#Home">Home</a></li>
-                <li><a href="#Portfolio">Potfolio</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
