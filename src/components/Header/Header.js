@@ -3,7 +3,7 @@ import React from 'react'
 function Header() {
   return (
     <div>
-      <Header className="App-header">
+      <header className="App-header">
         <nav>
             <ul>
                 <li><a href="#Home">Home</a></li>
@@ -11,7 +11,7 @@ function Header() {
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
-      </Header>
+      </header>
     </div>
   )
 }
