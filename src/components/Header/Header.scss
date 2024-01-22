@@ -5,6 +5,11 @@ header {
     background-color: $background-color;
     color: white;
     padding: 1rem;
+
+    .logo {
+      margin-right: auto;
+      height: 40px;
+    }
   
     nav {
       ul {
