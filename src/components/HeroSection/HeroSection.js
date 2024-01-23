@@ -4,7 +4,8 @@ const HeroSection = () => {
   return (
     <section id="home">
       <div className="hero-container">
-        <h1>Your Name</h1>
+        <h3>hello, I am</h3>
+        <h1>CALEB ZWINGLI</h1>
         <p>Web Developer | Software Engineer</p>
         {/* Add additional content or call-to-action buttons as needed */}
       </div>
