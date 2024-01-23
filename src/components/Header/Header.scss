@@ -20,13 +20,15 @@ header {
         justify-content: flex-end;
   
         li {
-          margin-right: 1rem;
+          margin-right:3.2rem;
   
           a {
             text-decoration: none;
             color: white;
             font-weight: bold;
+            font-family: "Josefin Sans", sans-serif;
             transition: color 0.3s ease;
+            font-size: 24px;
   
             &:hover {
               color: #ecf0f1;
