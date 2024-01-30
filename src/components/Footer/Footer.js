@@ -6,8 +6,10 @@ const Footer = () => {
     const year = currentDate.getFullYear();
 
     return (
-        <footer className-"footer-container">
+        <footer className="footer-container">
         <div className="social-icons">
             
         </div>
+        </footer>
     )
+}
