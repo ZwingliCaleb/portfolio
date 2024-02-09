@@ -13,3 +13,4 @@ const Footer = () => {
         </footer>
     )
 }
+ 
