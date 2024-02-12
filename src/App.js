@@ -1,16 +1,23 @@
+// App.js
 import React from 'react';
-import './App.scss';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
-import HeroSection from './components/HeroSection/HeroSection';
-import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
-    <div className="App-container">
-      <Header/>
-      <HeroSection/>
-      <Footer/>
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
