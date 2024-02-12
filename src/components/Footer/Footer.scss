@@ -1,0 +1,33 @@
+// Footer.scss
+
+.footer-container {
+    background-color: #00418D;
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    font-size: 24px;
+    margin-top: 20px;
+  
+    a {
+      color: black;
+      margin: 0 10px;
+      text-decoration: none;
+  
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  
+  .footer-info {
+    margin-top: 20px;
+  
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  
