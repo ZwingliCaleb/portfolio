@@ -11,16 +11,16 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="social-icons">
-        <a href="link-to-your-facebook-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/caleb-zwingli-566b5320b/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="link-to-your-twitter-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/ZwingliCaleb" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="link-to-your-instagram-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/ZwingliCaleb?t=kn-uAh-mVC4Oz5y5rLU1bA&s=09" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href="link-to-your-linkedin-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://medium.com/@calebzwingli" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faMedium} />
         </a>
       </div>
