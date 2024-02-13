@@ -1,11 +1,9 @@
 import React from 'react'
 import './Header.scss'
-//import logo from '../src/assets/images/logo.png'
 function Header() {
   return (
     <div>
       <header className="App-header">
-        
         <nav>
             <ul>
                 <li><a href="#Home">Home</a></li>

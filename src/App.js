@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
@@ -9,14 +8,12 @@ import Contact from './pages/Contact/Contact';
 function App() {
   return (
     <Router>
-      <div>
-        <Header/>
-          <Routes>
-            <Route path="/" exact render={() => <Home />} />
-            <Route path="/portfolio" render={() => <Portfolio/>} />
-            <Route path="/contact" render={() => <Contact/>} />
-          </Routes>
-      </div>
+      <Header /> {/* Include the Header outside of the Routes block */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </Router>
   );
 }
