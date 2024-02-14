@@ -1,13 +1,12 @@
-// Contact.js
 import React from 'react';
 
 const Contact = () => {
   return (
     <div>
-      <h2>Contact Page</h2>
-      {/* Additional content */}
+      <h1>Contact</h1>
+      <p>My contact information</p>
     </div>
   );
-};
+}
 
 export default Contact;

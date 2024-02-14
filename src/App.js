@@ -1,20 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
-import Home from './pages/Home/Home';
-import Portfolio from './pages/Portfolio/Portfolio';
-import Contact from './pages/Contact/Contact';
+import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
+import HeroSection from './components/HeroSection/HeroSection';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <Router>
+    <div>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
-    </Router>
+      <HeroSection/>
+      <Portfolio />
+      <Contact />
+      <Footer/>
+    </div>
   );
 }
 
