@@ -7,7 +7,6 @@ const HeroSection = () => {
       <h3>hello, I am</h3>
       <h1>CALEB ZWINGLI</h1>
       <p>Web Developer | Software Engineer</p>
-      {/* Add additional content or call-to-action buttons as needed */}
     </div>
   );
 };
