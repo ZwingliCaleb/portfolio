@@ -9,7 +9,7 @@ const ContactForm = () => {
 
   const handleChange =(e) => {
     setFormData({
-      ...FormData,
+      ...formData,
       [e.target.name]: e.target.value,
     });
   };
@@ -17,7 +17,7 @@ const ContactForm = () => {
   const handleSubmit =(e) => {
     e.preventDefault();
     //adding my form submission logic here
-    console.log('Form submitted:', FormData);
+    console.log('Form submitted:', formData);
     //making an API request to backend here to handle form data
   };
 
@@ -28,7 +28,7 @@ const ContactForm = () => {
         type="text"
         id="name"
         name="name"
-        value={FormData.name}
+        value={formData.name}
         onChange={handleChange}
         required
       />
@@ -38,7 +38,7 @@ const ContactForm = () => {
         type="email"
         id="email"
         name="email"
-        value={FormData.email}
+        value={formData.email}
         onChange={handleChange}
         required
       />
@@ -47,12 +47,12 @@ const ContactForm = () => {
       <textarea
         id="message"
         name="message"
-        value={FormData.message}
+        value={formData.message}
         onChange={handleChange}
         required
       ></textarea>
 
-      <button type="submit">Submit</button>
+      <button type="submit">Send Message</button>
     </form>
   );
 };
