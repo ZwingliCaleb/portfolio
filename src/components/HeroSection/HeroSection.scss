@@ -1,9 +1,10 @@
 // HeroSection.scss
 .hero-container {
-  background-color: #00418D; /* Set your desired background color */
-  color: hsl(0, 0%, 0%); /* Set your desired text color */
-  padding: 80px 20px; /* Adjust padding as needed */
+  position: relative; 
+  color: white; /* Set your desired text color */
+  padding: 120px 60px; /* Adjust padding as needed */
   text-align: left;
+
 
   h1 {
     font-size: 3rem; /* Adjust the font size for the main heading */
