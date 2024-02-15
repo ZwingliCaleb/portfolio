@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 const ContactForm = () => {
-  const [FormData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
@@ -38,7 +38,7 @@ const ContactForm = () => {
         type="email"
         id="email"
         name="email"
-        value={formData.email}
+        value={FormData.email}
         onChange={handleChange}
         required
       />
@@ -56,4 +56,5 @@ const ContactForm = () => {
     </form>
   );
 };
-export default Contact
+
+export default ContactForm;
