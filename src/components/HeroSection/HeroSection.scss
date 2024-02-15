@@ -1,10 +1,21 @@
-.hero_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-  font-weight: bold;
-  font-family: "Josefin Sans", sans-serif;
+// HeroSection.scss
+.hero-container {
+  background-color: #00418D; /* Set your desired background color */
+  color: hsl(0, 0%, 0%); /* Set your desired text color */
+  padding: 80px 20px; /* Adjust padding as needed */
+  text-align: left;
+
+  h1 {
+    font-size: 3rem; /* Adjust the font size for the main heading */
+    margin: 20px 0; /* Add margin to the top and bottom */
+  }
+
+  h2 {
+    font-size: 2rem; /* Adjust the font size for the subheading */
+    margin-bottom: 30px; /* Add margin to the bottom */
+  }
+
+  h3 {
+    font-size: 1.5rem; /* Adjust the font size for the additional text */
+  }
 }
