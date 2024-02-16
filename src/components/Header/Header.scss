@@ -2,7 +2,7 @@
 @import "./src/App";
 
 header {
-    background-color: $background-color;
+    background-color: #2d3250;
     color: white;
     padding: 1.6rem;
 
@@ -32,7 +32,7 @@ header {
             font-size: 24px;
   
             &:hover {
-              color: #ffd700;
+              color: #f9b17a;
             }
           }
         }
