@@ -9,6 +9,7 @@ function Header() {
             <ul>
                 <img src={logo} alt="logo" className="logo" />
                 <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
                 <li><a href="#Portfolio">Portfolio</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
