@@ -9,7 +9,7 @@ const About = () => {
       <div className="about-content">
         <h2>About Me</h2>
         <p>
-          Hi, I'm [Your Name], a passionate and detail-oriented software engineer with a focus on frontend development.
+          Hi, I'm Caleb Zwingli, a passionate and detail-oriented software engineer with a focus on frontend development.
           I enjoy creating elegant solutions to complex problems and transforming ideas into intuitive user experiences.
         </p>
         <p>
