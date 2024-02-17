@@ -18,6 +18,12 @@ form {
       border-radius: 4px;
       background-color: #359FCD;
     }
+
+    textarea {
+      resize: none;
+      width: 384px;
+      height: 200px;
+    }
   
     button {
       background-color: black;
