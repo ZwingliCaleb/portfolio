@@ -5,7 +5,10 @@ header {
     background-color: #2d3250;
     color: white;
     padding: 1.8rem;
-    height: 20vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 
     .logo {
        margin-right: auto;
