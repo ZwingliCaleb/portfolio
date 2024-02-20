@@ -8,7 +8,9 @@ function Header() {
       <header className="header">
         <nav>
             <ul>
-            <li><Link to="img" smooth={true} duration={500}><img src={logo} alt="logo" className="logo" /></Link></li>
+              <div className="logo">
+                <li><Link to="img" smooth={true} duration={500}><img src={logo} alt="logo" /></Link></li>
+              </div>
             <li><Link to="Home" smooth={true} duration={500}>Home</Link></li>
             <li><Link to="About" smooth={true} duration={500}>About</Link></li>
             <li><Link to="Portfolio" smooth={true} duration={500}>Portfolio</Link></li>
