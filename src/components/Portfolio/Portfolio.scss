@@ -60,5 +60,15 @@
     margin: 0 auto;
     font-size: 1rem;
     font-weight: 600;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #333;
+    }
+
+    &:active {
+      background-color: #555;
+      color: rgb(26, 35, 36);
+    }
   }
 }

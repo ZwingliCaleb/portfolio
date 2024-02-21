@@ -4,6 +4,16 @@ import React from 'react';
 import './Portfolio.scss'; // Import your styles
 
 const Portfolio = () => {
+  const handleDownloadResume = () => {
+    const resumeFile = 'Resume.pdf';
+    const resumePath = process.env.PUBLIC_URL + `/${resumeFile}`;
+
+    const link = document.createElement('a');
+    link.href = resumePath;
+    link.download = resumeFile;
+    link.click();
+  };
+
   return (
     <section id="Portfolio" className="portfolio-container">
       <h2 className="portfolio-header">Portfolio</h2>  
@@ -32,7 +42,7 @@ const Portfolio = () => {
             <li>Software Developer Intern at World Agroforestry</li>
             <li>Tech Support Intern at LBDA</li>
         </ul>
-        <button className="button">Download Resume</button>
+        <button className="button" onClick={handleDownloadResume}>Download Resume</button>
       </div>
 
       <div className="portfolio-section">
