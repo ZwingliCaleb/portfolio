@@ -5,7 +5,7 @@ import './About.scss'; // Import your styles
 
 const About = () => {
   return (
-    <section id="about" className="about-container">
+    <section id="About" className="about-container">
       <div className="about-content">
         <h2>About Me</h2>
         <p>

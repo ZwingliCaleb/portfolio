@@ -1,46 +1,46 @@
-// Header.scss
 @import "./src/App";
 
 header {
-    background-color: #2d3250;
-    color: white;
-    padding: 1.3rem;
-    //position: fixed;
-    top: 10;
-    width: 100%;
-    z-index: 1000;
+  background-color: #2d3250;
+  color: white;
+  padding: 1.0rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 5vh;
 
-    .logo {
-       margin-right: auto;
-       height: 60px;
-       padding: 0.1rem 0.2rem 0.1rem 0.2rem;
-    }
-  
-    nav {
-      ul {
-        list-style-type: none;
-        margin: 2;
-        padding: 0;
-        display: flex;
-        justify-content: flex-end;
-  
-        li {
-          margin-right:3.2rem;
-  
-          a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-family: "Josefin Sans", sans-serif;
-            transition: color 0.3s ease;
-            font-size: 24px;
-  
-            &:hover {
-              color: #f9b17a;
-            }
+  .logo {
+    margin-right: auto;
+    height: 20px;
+    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+    padding-top: -10px;
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+      margin: 0; // Corrected margin value
+      padding-top: 24px;
+      display: flex;
+      justify-content: flex-end;
+
+      li {
+        margin-right: 3.2rem;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          font-family: "Josefin Sans", sans-serif;
+          transition: color 0.3s ease;
+          font-size: 24px;
+
+          &:hover {
+            color: #f9b17a;
           }
         }
       }
     }
   }
-  
+}

@@ -5,7 +5,7 @@ import './Portfolio.scss'; // Import your styles
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="portfolio-container">
+    <section id="Portfolio" className="portfolio-container">
       <h2 className="portfolio-header">Portfolio</h2>  
 
      <div className="portfolio-sections">

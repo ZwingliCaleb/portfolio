@@ -1,41 +1,45 @@
 form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
+    align-items: center;
   
     label {
       margin-bottom: 12px;
       font-weight: bold;
-      font-size: 1.1rem;
+      font-size: 1.0rem;
     }
   
     input,
     textarea {
       padding: 8px;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       border: 1px solid ;
-      border-radius: 4px;
-      background-color: #359FCD;
+      border-radius: 2px;
+      background-color: #ffffff;
+      font-family: "Josefin Sans", sans-serif;
+      width:fit-content;
     }
 
     textarea {
       resize: none;
       width: 384px;
-      height: 200px;
+      height: 160px;
+      align-content: center;
     }
   
     button {
-      background-color: black;
-      color: #f9b17a;
+      background-color: #f9b17a;
+      color: black;
       font-family: "Josefin Sans", sans-serif;
-      padding: 14px;
+      padding: 12px;
       border: none;
-      border-radius: 10px;
-      width: 200px;
+      border-radius: 12px;
+      width: 160px;
       cursor: pointer;
       margin: 0 auto;
-      font-size: 1.1rem;
-      font-weight:800;
+      font-size: 1.0rem;
+      font-weight: 900;
     }
   }
