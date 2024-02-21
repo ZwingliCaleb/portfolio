@@ -3,7 +3,7 @@
 header {
   background-color: #2d3250;
   color: white;
-  padding: 1.0rem;
+  padding: 1.0rem 0 1.0rem 0;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -14,7 +14,6 @@ header {
     margin-right: auto;
     height: 20px;
     padding: 0.1rem 0.2rem 0.1rem 0.2rem;
-    padding-top: -10px;
   }
 
   nav {
@@ -32,7 +31,6 @@ header {
           text-decoration: none;
           color: white;
           font-weight: bold;
-          font-family: "Josefin Sans", sans-serif;
           transition: color 0.3s ease;
           font-size: 24px;
 

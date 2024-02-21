@@ -5,10 +5,11 @@ import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
+import './App.scss';
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
       <Header />
       <HeroSection id="Home"/>
       <About id="About"/>
