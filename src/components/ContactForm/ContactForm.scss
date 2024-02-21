@@ -1,45 +1,50 @@
 form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
-    align-items: center;
-  
-    label {
-      margin-bottom: 12px;
-      font-weight: bold;
-      font-size: 1.0rem;
-    }
-  
-    input,
-    textarea {
-      padding: 8px;
-      margin-bottom: 12px;
-      border: 1px solid ;
-      border-radius: 2px;
-      background-color: #ffffff;
-      font-family: "Josefin Sans", sans-serif;
-      width:fit-content;
-    }
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  align-items: center;
 
-    textarea {
-      resize: none;
-      width: 384px;
-      height: 160px;
-      align-content: center;
-    }
-  
-    button {
-      background-color: #f9b17a;
-      color: black;
-      font-family: "Josefin Sans", sans-serif;
-      padding: 12px;
-      border: none;
-      border-radius: 12px;
-      width: 160px;
-      cursor: pointer;
-      margin: 0 auto;
-      font-size: 1.0rem;
-      font-weight: 900;
+  label {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 1.0rem;
+  }
+
+  input,
+  textarea {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #f9b17a; /* Add your desired border color */
+    border-radius: 2px;
+    background-color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    width: fit-content;
+  }
+
+  textarea {
+    resize: none;
+    width: 100%; /* Set width to 100% to make it responsive */
+    height: 160px;
+    align-content: center;
+  }
+
+  button {
+    background-color: #f9b17a;
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    width: 160px;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 1.0rem;
+    font-weight: 900;
+
+    &:hover {
+      background-color: #1E212F; /* Change color on hover */
+      color: white;
     }
   }
+}
