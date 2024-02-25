@@ -24,32 +24,32 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="form">
-      <label htmlFor="name">Name</label>
       <input
         type="text"
         id="name"
         name="name"
         value={formData.name}
         onChange={handleChange}
+        placeholder="Name" //useplaceholder for the hint
         required
       />
 
-      <label htmlFor="email">Email</label>
       <input
         type="email"
         id="email"
         name="email"
         value={formData.email}
         onChange={handleChange}
+        placeholder="Email Address" //useplaceholder for the hint
         required
       />
 
-      <label htmlFor="message">Message</label>
       <textarea
         id="message"
         name="message"
         value={formData.message}
         onChange={handleChange}
+        placeholder="Message"
         required
       ></textarea>
 

@@ -1,15 +1,9 @@
 form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
   align-items: center;
-
-  label {
-    margin-bottom: 12px;
-    font-weight: bold;
-    font-size: 1.0rem;
-  }
 
   input,
   textarea {
@@ -19,12 +13,24 @@ form {
     border-radius: 2px;
     background-color: #ffffff;
     font-family: "Josefin Sans", sans-serif;
-    width: fit-content;
+    width: 100%;
+    transition: border-color 0.3s ease;
+
+    &::placeholder {
+      color: #f9b17a;
+      opacity: 0.5;
+    }
+
+    &::focus {
+      border-color: #1e212f;
+      &::placeholder {
+        opacity: 0.3;
+      }
+    }
   }
 
   textarea {
-    resize: none;
-    width: 100%; /* Set width to 100% to make it responsive */
+    resize: none; /* Set width to 100% to make it responsive */
     height: 160px;
     align-content: center;
   }
