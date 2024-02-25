@@ -1,25 +1,30 @@
-// HeroSection.scss
-.hero-container  {
-  position: relative; 
-  color: #f9b17a; /* Set your desired text color */
-  padding: 120px 0; /* Adjust padding as needed */
-  text-align: left; 
+/* HeroSection.scss */
+
+.hero-container {
+  position: relative;
   background-color: #2d3250;
-  //width: 100vw;
+  color: #f9b17a;
+  padding: 120px 60px; /* Adjust padding as needed */
+  text-align: left;
   height: 60vh;
 
+  .hero-box {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-left: 20px; /* Adjust margin-left as needed */
 
-  h1 {
-    font-size: 3rem; /* Adjust the font size for the main heading */
-    margin: 30px 0; /* Add margin to the top and bottom */
-  }
+    h1 {
+      font-size: 3rem;
+      margin: 30px 0;
+    }
 
-  h2 {
-    font-size: 2.0rem; /* Adjust the font size for the subheading */
-    margin-bottom: 30px; /* Add margin to the bottom */
-  }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
 
-  h3 {
-    font-size: 1.6rem; /* Adjust the font size for the additional text */
+    h3 {
+      font-size: 1.5rem;
+    }
   }
 }
