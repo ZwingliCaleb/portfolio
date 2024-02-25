@@ -1,7 +1,5 @@
-// About.js
-
 import React from 'react';
-import './About.scss'; // Import your styles
+import './About.scss';
 
 const About = () => {
   return (
@@ -14,18 +12,16 @@ const About = () => {
         </p>
         <p>
           My skills include:
-          <ul>
-            <li>React.js</li>
-            <li>JavaScript (ES6+)</li>
-            <li>HTML5 & CSS3</li>
-            {/* Add more skills as needed */}
-          </ul>
         </p>
+        <ul>
+          <li>React.js</li>
+          <li>JavaScript (ES6+)</li>
+          <li>HTML5 & CSS3</li>
+        </ul>
         <p>
           I am dedicated to staying up-to-date with the latest technologies and continuously refining my skills.
           Whether it's crafting pixel-perfect UIs or optimizing performance, I thrive on delivering high-quality solutions.
         </p>
-        {/* Add more personal details, projects, or experiences as needed */}
       </div>
     </section>
   );

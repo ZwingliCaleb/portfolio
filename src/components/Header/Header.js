@@ -7,10 +7,10 @@ function Header() {
       <header className="header">
         <nav>
             <ul>
-            <li><Link to="Home" smooth={true} duration={500}>Home</Link></li>
-            <li><Link to="About" smooth={true} duration={500}>About</Link></li>
-            <li><Link to="Portfolio" smooth={true} duration={500}>Portfolio</Link></li>
-            <li><Link to="Contact" smooth={true} duration={500}>Contact</Link></li>  
+              <li><Link to="Home" smooth={true} duration={500}>Home</Link></li>
+              <li><Link to="About" smooth={true} duration={500}>About</Link></li>
+              <li><Link to="Portfolio" smooth={true} duration={500}>Portfolio</Link></li>
+              <li><Link to="Contact" smooth={true} duration={500}>Contact</Link></li>  
             </ul>
         </nav>
       </header>
