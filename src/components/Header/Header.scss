@@ -1,26 +1,20 @@
-@import "./src/App";
+// Header.scss
 
-header {
+.header {
   background-color: #2d3250;
   color: white;
-  padding: 1.0rem 1rem 1.5rem ;
+  padding: 1.3rem;
   position: fixed;
   top: 0;
-  //width: 100vw;
-  z-index: 100;
+  width: 100vw;
+  z-index: 1000;
   height: 5vh;
-
-  .logo {
-    margin-right: auto;
-    height: 20px;
-    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
-  }
 
   nav {
     ul {
       list-style-type: none;
-      margin: 0; // Corrected margin value
-      padding-top: 24px;
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: flex-end;
 

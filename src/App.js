@@ -7,6 +7,7 @@ import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import './App.scss';
 
+
 const App = () => {
   return (
     <div className="app-container">
