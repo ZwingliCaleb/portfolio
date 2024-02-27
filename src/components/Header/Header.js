@@ -5,7 +5,7 @@ function Header() {
   return (
     <div>
       <header className="Header">
-        <nav>
+        <nav className="nav-container">
             <ul>
               <li><Link to="Home" smooth={true} duration={500}>Home</Link></li>
               <li><Link to="About" smooth={true} duration={500}>About</Link></li>

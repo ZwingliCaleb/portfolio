@@ -9,14 +9,21 @@
   width: 100vw;
   z-index: 1000;
   height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 5vh;
 
-  nav {
+  .nav-container {
+    margin-left: auto;
+
     ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: flex-end;
+      align-items: center;
 
       li {
         margin-right: 3.2rem;
@@ -26,7 +33,7 @@
           color: white;
           font-weight: bold;
           transition: color 0.3s ease;
-          font-size: 24px;
+          font-size: 1.5rem;
 
           &:hover {
             color: #f9b17a;
