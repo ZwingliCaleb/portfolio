@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 function Header() {
   return (
     <div>
-      <header className="header">
+      <header className="Header">
         <nav>
             <ul>
               <li><Link to="Home" smooth={true} duration={500}>Home</Link></li>

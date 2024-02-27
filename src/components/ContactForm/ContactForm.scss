@@ -16,6 +16,10 @@ form {
     width: 100%;
     transition: border-color 0.3s ease;
 
+    &:not([type="textarea"]) {
+      max-width: 540px;
+    }
+
     &::placeholder {
       color: #f9b17a;
       opacity: 0.5;
