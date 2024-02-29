@@ -14,6 +14,16 @@
   align-items: center;
   line-height: 5vh;
 
+  .BurgerMenu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
   .nav-container {
     margin-left: auto;
 
