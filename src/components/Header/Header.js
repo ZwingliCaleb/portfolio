@@ -1,35 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Header.scss';
 import { Link } from 'react-scroll';
-import { slide as Menu } from 'react-burger-menu';
+import {FaTimes, FaBars} from 'react-icons/fa';
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const handleMenuClick = () => {
-    setMenuOpen(!menuOpen);
-  };
 
   return (
     <div>
       <header className="Header">
-        <div className="BurgerMenu" onClick={handleMenuClick}>
-          ☰
-        </div>
+        <h3>Zwingli</h3>
         <nav className="nav-container">
             <ul>
               <li><Link to="Home" smooth={true} duration={500}>Home</Link></li>
               <li><Link to="About" smooth={true} duration={500}>About</Link></li>
               <li><Link to="Portfolio" smooth={true} duration={500}>Portfolio</Link></li>
-              <li><Link to="Contact" smooth={true} duration={500}>Contact</Link></li>  
+              <li><Link to="Contact" smooth={true} duration={500}>Contact</Link></li>
+              <button>
+                <FaTimes />
+              </button>  
             </ul>
+            <button>
+              <FaBars />
+            </button>
         </nav>
       </header>
-      <Menu isOpen={menuOpen} onStateChange={(state) => setMenuOpen(state.isOpen)}>
-        <Link to="Home" smooth={true} duration={500} onClick={handleMenuClick}></Link>
-        <Link to="About" smooth={true} duration={500} onClick={handleMenuClick}></Link>
-        <Link to="Portfolio" smooth={true} duration={500} onClick={handleMenuClick}></Link>
-        <Link to="Contact" smooth={true} duration={500} onClick={handleMenuClick}></Link>
-      </Menu>
-
+    
     </div>
   );
 }
