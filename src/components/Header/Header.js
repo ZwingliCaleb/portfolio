@@ -19,11 +19,11 @@ function Header() {
               <li><Link to="About" smooth={true} duration={500}>About</Link></li>
               <li><Link to="Portfolio" smooth={true} duration={500}>Portfolio</Link></li>
               <li><Link to="Contact" smooth={true} duration={500}>Contact</Link></li>
-              <button onClick={showNavbar}>
+              <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                 <FaTimes />
               </button>  
             </ul>
-            <button onClick={showNavbar}>
+            <button className="nav-btn" onClick={showNavbar}>
               <FaBars />
             </button>
         </nav>
