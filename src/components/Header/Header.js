@@ -6,7 +6,7 @@ function Header() {
   const navRef = useRef();
 
   const showNavbar =() => {
-    navRef.current.classlist.toggle("responsive_nav")
+    navRef.current.classList.toggle("responsive_nav")
   }
 
   return (
