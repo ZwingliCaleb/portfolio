@@ -1,12 +1,12 @@
-import React, {useRef} from 'react';
-import './Header.scss';
+import {useRef} from 'react';
+import './Navbar.scss';
 import { Link } from 'react-scroll';
 import {FaTimes, FaBars} from 'react-icons/fa';
 function Header() {
   const navRef = useRef();
 
   const showNavbar =() => {
-    navRef.current.classList.toggle("responsive_nav")
+    navRef.current.classList.toggle("responsive_nav");
   }
 
   return (
@@ -28,7 +28,6 @@ function Header() {
             </button>
         </nav>
       </header>
-    
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
 import HeroSection from './components/HeroSection/HeroSection';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
@@ -11,7 +11,7 @@ import './App.scss';
 const App = () => {
   return (
     <div className="app-container">
-      <Header />
+      <Navbar />
       <HeroSection id="Home"/>
       <About id="About"/>
       <Portfolio id="Portfolio"/>
