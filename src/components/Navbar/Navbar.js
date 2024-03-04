@@ -1,36 +1,33 @@
-import {useRef} from 'react';
+import { useRef } from 'react';
 import './Navbar.scss';
-import { Link } from 'react-scroll';
-import {FaTimes, FaBars} from 'react-icons/fa';
-function Header() {
+//import { Link } from 'react-scroll';
+import { FaBars, FaTimes } from 'react-icons/fa';
+function Navbar() {
   const navRef = useRef();
-
-  const showNavbar =() => {
+  const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   }
 
   return (
     <div>
-      <header className="Header">
+      <header>
         <h3>Zwingli</h3>
-        <nav className="nav-container" ref={navRef}>
-            <ul>
-              <li><Link to="Home" smooth={true} duration={500}>Home</Link></li>
-              <li><Link to="About" smooth={true} duration={500}>About</Link></li>
-              <li><Link to="Portfolio" smooth={true} duration={500}>Portfolio</Link></li>
-              <li><Link to="Contact" smooth={true} duration={500}>Contact</Link></li>
+        <nav ref={navRef}>
+              <a href="/#">Home</a>
+              <a href="/#">About</a>
+              <a href="/#">Portfolio</a>
+              <a href="/#">Contact</a>
               <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                 <FaTimes />
-              </button>  
-            </ul>
+              </button>
+        </nav>    
             <button className="nav-btn" onClick={showNavbar}>
               <FaBars />
             </button>
-        </nav>
       </header>
     </div>
   );
 }
 
-export default Header
+export default Navbar;
   

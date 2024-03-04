@@ -1,84 +1,87 @@
 // Header.scss
 
-.Header {
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
   background-color: #2d3250;
   color: white;
-  padding: 1.3rem;
+  display: flex;
+  padding: 0 1.5rem;
   position: fixed;
-  //top: 0;
   width: 100vw;
   z-index: 1000;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
+  height: 100px;
   align-items: center;
-  line-height: 5vh;
+}
 
-  .nav-container {
-    //margin-left: auto;
+nav{
+  margin-left: auto;
+}
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+nav a {
+  margin: 0 2rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
-      li {
-        margin-right: 3.2rem;
+nav a:hover{
+  color: #f9b17a;
+}
 
-        a {
-          text-decoration: none;
-          color: white;
-          font-weight: bold;
-          transition: color 0.3s ease;
-          font-size: 1.2rem;
-          margin: 0 1.2rem;
+header .nav-btn{
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
 
-          &:hover {
-            color: #f9b17a;
-          }
-        }
-      }
-    }
+@media only screen and (max-width: 768px){
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    margin-left: auto;
+  }
 
-    .nav-container .nav-btn {
-      padding: 5px;
-      cursor: pointer;
-      background: transparent;
-      border: none;
-      outline: none;
-      color: white;
-      visibility: hidden;
-      opacity: 0;
+  header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #2d3250;
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
 
-    }
+  header .responsive_nav{
+    transform: none;
+  }
 
-    @media only screen and (max-width: 1024px){
-      header .nav-btn{
-        visibility: visible;
-        opacity: 1;
-      }
+  nav .nav-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.3rem;
+  }
 
-      header nav-container{
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-        background-color: #2d3250;
-        transition: 1s;
-        transform: translateY(-100vh);  
-      }
-
-      header .responsive-nav{
-        transform: none;
-      }
-    }
+  nav a{
+    font-size: 1.2rem;
   }
 }
