@@ -17,6 +17,10 @@ header {
   z-index: 1000;
   height: 100px;
   align-items: center;
+
+  h3{
+    font-size: 1.2rem;
+  }
 }
 
 nav{
@@ -52,6 +56,13 @@ header .nav-btn{
     visibility: visible;
     opacity: 1;
     margin-left: auto;
+    font-size: 1.4rem;
+  }
+
+  header {
+    h3{
+      font-size: 0.9rem;
+    }
   }
 
   header nav{

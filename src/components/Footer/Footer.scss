@@ -3,9 +3,10 @@
 .footer-container {
     background-color: black;
     color: white;
-    padding: 60px 0 60px 0;
+    padding: 60px 0;
     text-align: center;
-    height: 10vh;
+    height: 30vh;
+    box-sizing: border-box;
     //width: 100vw;
   }
   
@@ -34,4 +35,23 @@
       font-family: "Josefin Sans", sans-serif;
     }
   }
+
+@media only screen and (max-width: 768px) {
+  .footer-container{
+    height: auto;
+  }
+
+  .social-icons{
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .footer-info{
+    margin-top: 10px;
+
+    p {
+      font-size: 10px;
+    }
+  }
+}  
   
