@@ -6,7 +6,7 @@
   color: #f9b17a;
   padding: 120px 60px; /* Adjust padding as needed */
   text-align: left;
-  height: 200px;
+  height: 600px;
 
   .hero-box {
     max-width: 800px;
@@ -25,6 +25,24 @@
 
     h3 {
       font-size: 2.0rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  hero-box{
+    max-width: 800px;
+
+    h1{
+      font-size: 2.0rem;
+    }
+
+    h2{
+      font-size: 1.5rem;
+    }
+
+    h3{
+      font-size: 0.5rem;
     }
   }
 }
