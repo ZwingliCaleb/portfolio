@@ -25,13 +25,9 @@ const Portfolio = () => {
             <li>React.js</li>
             <li>JavaScript (ES6+)</li>
             <li>HTML5 & CSS3</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
             <li>Git & GitHub</li>
             <li>Agile Methodologies</li>
             <li>Responsive Web Design</li>
-            <li>UI/UX Design</li>
-            <li>Testing & Debugging</li>
         </ul>
       </div>
 
