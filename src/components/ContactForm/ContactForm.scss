@@ -1,7 +1,7 @@
 form {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  //max-width: 600px;
   margin: 0 auto;
   align-items: center;
 
@@ -13,7 +13,7 @@ form {
     border-radius: 2px;
     background-color: #ffffff;
     font-family: "Josefin Sans", sans-serif;
-    width: 100%;
+    width: 90%;
     transition: border-color 0.3s ease;
 
     &:not([type="textarea"]) {
@@ -22,7 +22,7 @@ form {
 
     &::placeholder {
       color: #f9b17a;
-      opacity: 0.5;
+      opacity: 0.6;
     }
 
     &::focus {
@@ -55,6 +55,12 @@ form {
     &:hover {
       background-color: #1E212F; /* Change color on hover */
       color: white;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 0.85rem;
+      width: 130px;
+      padding: 9px;
     }
   }
 }
