@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import './Navbar.scss';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { smoothScroll } from '../../utils/scrollUtils';
 import { FaBars, FaTimes } from 'react-icons/fa';
 function Navbar() {
   const navRef = useRef();
@@ -8,20 +8,20 @@ function Navbar() {
     navRef.current.classList.toggle("responsive_nav");
   };
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
+  const handleScroll = (targetId) => {
+    smoothScroll(targetId);
     showNavbar();
-  }
+  };
 
   return (
     <div>
       <header>
-        <h3 onClick={scrollToTop}>Zwingli</h3>
+        <h3>Zwingli</h3>
         <nav ref={navRef}>
-              <Link to="Home" smooth={true} duration={500}>Home</Link>
-              <Link to="About" smooth={true} duration={500 }>About</Link>
-              <Link to="Portfolio" smooth={true} duration={500}>Portfolio</Link>
-              <Link to="Contact" smooth={true} duration={500}>Contact</Link>
+              <a href="/#" onClick={() => handleScroll('Home')}>Home</a>
+              <a href="/#" onClick={() => handleScroll('About')}>About</a>
+              <a href="/#" onClick={() => handleScroll('Portfolio')}>Portfolio</a>
+              <a href="/#" onClick={() => handleScroll('Contact')}>Contact</a>
               <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                 <FaTimes />
               </button>
