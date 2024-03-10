@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <div>
       <header>
-        <h3>Zwingli</h3>
+        <h3>ZwartLove</h3>
         <nav ref={navRef}>
               <a href="/#" onClick={() => handleScroll('Home')}>Home</a>
               <a href="/#" onClick={() => handleScroll('About')}>About</a>
