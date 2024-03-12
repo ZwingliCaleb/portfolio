@@ -3,11 +3,10 @@
 .about-container {
     display: flex;
     background-color: #424769;
-    background-image: url("../../assets/images/about.jpg");
+    background-image: url("../../assets/images/about1.jpg");
     background-size: cover;
     background-position: center;
-    //opacity: 0.2;
-    align-items: right;
+    //opacity: 0.9;
     justify-content: center;
     color: white;
     width: 100vw;
@@ -25,7 +24,7 @@
       bottom: 0;
       background: inherit;
       z-index: -1;
-      filter: blur(2px);
+      filter: blur(px);
       opacity: 0.9;
     }  
 
@@ -35,7 +34,7 @@
     max-width: 800px;
     text-align: center;
     position: relative;
-    align-items: right;
+    margin-left: 700px;
     z-index: 2;
   
     h2 {
@@ -59,11 +58,18 @@
           margin-bottom: 5px;
           font-size: 1rem;
     }
+
+    @media only screen and (max-width: 1200px) {
+      margin-left: 0;
+      text-align: center;
+      opacity: 0.9;
+    }
   }
   
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1200px) {
     .about-container {
       padding: 70px 20px;
+      align-items: center;
     }
 
     .about-content {
