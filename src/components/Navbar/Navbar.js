@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import './Navbar.scss';
 import { smoothScroll } from '../../utils/scrollUtils';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Logo from '../../assets/images/logo.svg';
 function Navbar() {
   const navRef = useRef();
   const showNavbar = () => {
@@ -16,7 +17,7 @@ function Navbar() {
   return (
     <div>
       <header>
-        <h3>ZwartLove</h3>
+        <img src={Logo} alt="Logo" className="logo" />
         <nav ref={navRef}>
               <a href="/#" onClick={() => handleScroll('Home')}>Home</a>
               <a href="/#" onClick={() => handleScroll('About')}>About</a>
