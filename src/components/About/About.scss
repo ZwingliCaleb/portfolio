@@ -12,27 +12,28 @@
     width: 100vw;
     padding: 60px 0;
     position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: inherit;
+      z-index: 1;
+      backdrop-filter: blur(5px);
+      opacity: 0.1;
+      isolation: isolate;
+    }  
   }
-
-  .about-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    //width: 100%;
-    //height: 100%;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    z-index: -1;
-    backdrop-filter: blur(5px);
-
-  }  
   
   .about-content {
     max-width: 800px;
     text-align: center;
     position: relative;
+    z-index: 2;
   
     h2 {
       font-size: 2.5rem;
