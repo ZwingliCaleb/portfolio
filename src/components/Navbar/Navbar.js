@@ -1,17 +1,14 @@
-import { useRef } from 'react';
+import React, { useRef } from 'react';
 import './Navbar.scss';
-import { smoothScroll } from '../../utils/scrollUtils';
+import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Logo from '../../assets/images/logo.svg';
+
 function Navbar() {
   const navRef = useRef();
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
-  };
 
-  const handleScroll = (targetId) => {
-    smoothScroll(targetId);
-    showNavbar();
+  const showNavbar = () => {
+    navRef.current.classList.toggle('responsive_nav');
   };
 
   return (
@@ -19,21 +16,28 @@ function Navbar() {
       <header>
         <img src={Logo} alt="Logo" className="logo" />
         <nav ref={navRef}>
-              <a href="/#" onClick={() => handleScroll('Home')}>Home</a>
-              <a href="/#" onClick={() => handleScroll('About')}>About</a>
-              <a href="/#" onClick={() => handleScroll('Portfolio')}>Portfolio</a>
-              <a href="/#" onClick={() => handleScroll('Contact')}>Contact</a>
-              <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-                <FaTimes />
-              </button>
-        </nav>    
-            <button className="nav-btn" onClick={showNavbar}>
-              <FaBars />
-            </button>
+          <Link to="Home" smooth duration={500} onClick={showNavbar}>
+            Home
+          </Link>
+          <Link to="About" smooth duration={500} onClick={showNavbar}>
+            About
+          </Link>
+          <Link to="Portfolio" smooth duration={500} onClick={showNavbar}>
+            Portfolio
+          </Link>
+          <Link to="Contact" smooth duration={500} onClick={showNavbar}>
+            Contact
+          </Link>
+          <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+            <FaTimes />
+          </button>
+        </nav>
+        <button className="nav-btn" onClick={showNavbar}>
+          <FaBars />
+        </button>
       </header>
     </div>
   );
 }
 
 export default Navbar;
-  
