@@ -13,7 +13,9 @@ function Navbar() {
   return (
     <div>
       <header>
-        <img src={Logo} alt="Logo" className="logo" />
+        <Link to="Home" smooth duration={500} onClick={showNavbar}>
+          <img src={Logo} alt="logo" className="logo" />
+        </Link>
         <nav ref={navRef}>
           <Link to="Home" smooth duration={500} onClick={showNavbar}>
             Home
