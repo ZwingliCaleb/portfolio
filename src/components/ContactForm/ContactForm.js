@@ -23,7 +23,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form">
+    <form onSubmit={handleSubmit} className="form" action="https://formspree.io/f/xvoeqena" method="POST">
       <input
         type="text"
         id="name"
