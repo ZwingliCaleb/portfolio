@@ -34,7 +34,7 @@ const Portfolio = () => {
       <div className="portfolio-section">
         <h3>Experience</h3>
         <ul>
-            <li>Software Engineer Apprrentice at ALX-Africa</li>
+            <li>Software Engineer Apprentice at ALX-Africa</li>
             <li>Software Developer Intern at World Agroforestry</li>
             <li>Tech Support Intern at LBDA</li>
         </ul>
