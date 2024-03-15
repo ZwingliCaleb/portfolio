@@ -85,7 +85,7 @@ const ContactForm = () => {
             required
           ></textarea>
 
-          <button type="submit" disabled={submitting}>
+          <button className="button-pop" type="submit" disabled={submitting}>
             {submitting ? 'Sending...' : 'Send Message'}
           </button>
         </>
