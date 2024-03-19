@@ -15,8 +15,8 @@ Welcome to my portfolio website! This project showcases my skills, projects, and
 ## Overview
 This portfolio website serves as a platform to showcase my projects, skills, and experiences in web development. It includes sections such as About Me, Portfolio, Contact, and more.
 
-- Live Demo: [Link]
-- Source Code: [Link]
+- Live Demo: [https://calebzwingli.netlify.app/]
+- Source Code: [https://github.com/ZwingliCaleb/portfolio]
 
 ## Installation
 To run the project locally, follow these steps:
