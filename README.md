@@ -15,6 +15,9 @@ Welcome to my portfolio website! This project showcases my skills, projects, and
 ## Overview
 This portfolio website serves as a platform to showcase my projects, skills, and experiences in web development. It includes sections such as About Me, Portfolio, Contact, and more.
 
+- Live Demo: [Link]
+- Source Code: [Link]
+
 ## Installation
 To run the project locally, follow these steps:
 1. Clone this repository to your local machine.
@@ -31,17 +34,20 @@ The project directory is structured as follows:
 ## Folder Structure
 
 ```
-my-portfolio/
+portfolio/
   ├── public/
   │   ├── favicon.ico
   │   ├── index.html
   │   └── manifest.json
   ├── src/
-  │   ├── assets/
-  │   ├── components/
-  │   ├── pages/
-  │   ├── App.js
-  │   ├── index.js
+  │   ├── assets/ # images,icons and other media files
+  │   ├── components/ # Reusable React components
+  │   ├── App.js # Main React component
+  │   ├── App.scss
+  │   ├── global.scss
+  │   ├── index.js # Application entry point
+  ├── .gitignore
+  ├── package-lock.json
   ├── package.json
   └── README.md
 ```
