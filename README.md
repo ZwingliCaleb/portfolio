@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-Welcome to my portfolio website! This project showcases my skills, projects, and experiences as a web developer.
+Welcome to my portfolio website! This project showcases my skills, projects, and experiences as a Software Engineer and a Frontend developer.
 
 ## Table of Contents
 1. [Overview](#overview)
