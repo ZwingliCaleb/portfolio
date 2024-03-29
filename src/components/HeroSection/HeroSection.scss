@@ -17,6 +17,12 @@
     h1 {
       font-size: 3.5rem;
       margin: 30px 0;
+
+      .Zwingli {
+        &:hover {
+          color: white;
+        }
+      }
     }
 
     h2 {
