@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './ContactForm.scss';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -51,9 +50,9 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form">
+    <form onSubmit={handleSubmit} className="flex flex-col max-w-[600px] mx-auto items-center">
       {success ? (
-        <div className="success-message">Message sent successfully!</div>
+        <div className="bg-green-500 text-white py-2 px-4 rounded mb-4">Message sent successfully!</div>
       ) : (
         <>
           <input
@@ -64,6 +63,7 @@ const ContactForm = () => {
             onChange={handleChange}
             placeholder="Name"
             required
+            className="input-field"
           />
 
           <input
@@ -74,6 +74,7 @@ const ContactForm = () => {
             onChange={handleChange}
             placeholder="Email Address"
             required
+            className="input-field"
           />
 
           <textarea
@@ -83,9 +84,14 @@ const ContactForm = () => {
             onChange={handleChange}
             placeholder="Message"
             required
+            className="input-field resize-y h-40"
           ></textarea>
 
-          <button className="button-pop" type="submit" disabled={submitting}>
+          <button
+            className="bg-yellow-400 text-black py-2 px-4 rounded-lg font-semibold transition-transform duration-200 hover:scale-105"
+            type="submit"
+            disabled={submitting}
+          >
             {submitting ? 'Sending...' : 'Send Message'}
           </button>
         </>

@@ -1,6 +1,4 @@
-// Portfolio.js
 import React from "react";
-import "./Portfolio.scss"; // Import your styles
 
 const Portfolio = () => {
 	const handleDownloadResume = () => {
@@ -14,13 +12,13 @@ const Portfolio = () => {
 	};
 
 	return (
-		<section id="Portfolio" className="portfolio-container">
-			<h2 className="portfolio-header">Portfolio</h2>
+		<section id="Portfolio" className="bg-[#1E212F] text-white py-28 md:py-48">
+			<h2 className="text-3xl md:text-5xl font-bold mb-10 text-center">Portfolio</h2>
 
-			<div className="portfolio-sections">
-				<div className="portfolio-section">
-					<h3>Skills & Technologies</h3>
-					<ul>
+			<div className="flex flex-wrap justify-center gap-8">
+				<div className="max-w-sm bg-yellow-300 text-black rounded-lg p-6">
+					<h3 className="text-xl font-semibold mb-4">Skills & Technologies</h3>
+					<ul className="text-sm">
 						<li>React.js</li>
 						<li>JavaScript (ES6+)</li>
 						<li>HTML5 & CSS3</li>
@@ -30,21 +28,24 @@ const Portfolio = () => {
 					</ul>
 				</div>
 
-				<div className="portfolio-section">
-					<h3>Experience</h3>
-					<ul>
+				<div className="max-w-sm bg-yellow-300 text-black rounded-lg p-6">
+					<h3 className="text-xl font-semibold mb-4">Experience</h3>
+					<ul className="text-sm">
 						<li>Software Engineer Apprentice at ALX-Africa</li>
 						<li>Software Developer Intern at World Agroforestry</li>
 						<li>Tech Support Intern at LBDA</li>
 					</ul>
-					<button className="button" onClick={handleDownloadResume}>
+					<button
+						className="bg-black text-white font-semibold py-2 px-4 rounded-lg mt-4 hover:bg-gray-900 focus:outline-none"
+						onClick={handleDownloadResume}
+					>
 						Download Resume
 					</button>
 				</div>
 
-				<div className="portfolio-section">
-					<h3>Certificates & Badges</h3>
-					<ul>
+				<div className="max-w-sm bg-yellow-300 text-black rounded-lg p-6">
+					<h3 className="text-xl font-semibold mb-4">Certificates & Badges</h3>
+					<ul className="text-sm">
 						<li>ALX-Africa Software Engineering</li>
 						<li>Udacity-Bertelsmann: Agile Software Developer</li>
 					</ul>
