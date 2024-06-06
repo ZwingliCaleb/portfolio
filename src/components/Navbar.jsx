@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import Logo from '../../assets/images/logo.svg';
+import Logo from '../assets/images/logo.svg';
 
 function Navbar() {
   const navRef = useRef();
@@ -13,9 +13,9 @@ function Navbar() {
     <div>
       <header className="bg-gray-800 text-white fixed w-full z-50 h-24 flex items-center px-6">
         <Link to="Home" smooth duration={500} onClick={showNavbar}>
-          <img src={Logo} alt="logo" className="w-30 h-30 transition-filter duration-300 ease-in-out hover:filter brightness-150 hover:drop-shadow-lg" />
+          <img src={Logo} alt="logo" className="w-24 h-30 transition-filter duration-300 ease-in-out hover:filter brightness-150 hover:drop-shadow-lg" />
         </Link>
-        <nav ref={navRef} className="hidden md:flex ml-auto space-x-8 items-center">
+        <nav ref={navRef} className="hidden md:flex ml-auto gap-8 space-x-8 items-center">
           <Link to="Home" smooth duration={500} className="text-lg font-bold hover:text-yellow-500" onClick={showNavbar}>
             Home
           </Link>
