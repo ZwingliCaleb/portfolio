@@ -12,8 +12,8 @@ const Portfolio = () => {
 	};
 
 	return (
-		<section id="Portfolio" className="bg-[#1E212F] text-white py-28 md:py-48">
-			<h2 className="text-3xl md:text-5xl font-bold mb-10 text-center">Portfolio</h2>
+		<section id="Portfolio" className="bg-gradient-to-b from-gray-900 via-gray-900 to-blue-950 text-white py-28 md:py-48 min-h-screen md:min-h-auto">
+			<h2 className="text-5xl md:text-5xl font-bold mb-10 text-center">Portfolio</h2>
 
 			<div className="flex flex-wrap justify-center gap-8">
 				<div className="max-w-sm bg-yellow-300 text-black rounded-lg p-6">
