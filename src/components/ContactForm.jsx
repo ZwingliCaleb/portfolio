@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import {Input} from "@nextui-org/react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -51,42 +50,46 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col max-w-[600px] mx-auto items-center">
+    <form onSubmit={handleSubmit} className="flex flex-col max-w-lg mx-auto items-center">
       {success ? (
-        <div className="bg-green-500 text-white py-2 px-4 rounded mb-4">Message sent successfully!</div>
+        <div className="bg-blue-500 text-white py-2 px-4 rounded mb-4">Message sent successfully!</div>
       ) : (
         <>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Name"
-            required
-            className="input-field"
-          />
+          <div className="flex flex-col md:flex-row md:justify-between w-full gap-4 mb-6">
+            <input
+              type="text"
+              id="name"
+              className="m-2 input input-bordered w-full max-w-xs bg-blue-950 focus:bg-slate-300 focus:text-black"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Name"
+              required
+            />
 
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Email Address"
-            required
-            className="input-field"
-          />
+            <input
+              type="email"
+              id="email"
+              className="m-2 input input-bordered w-full max-w-xs bg-blue-950 focus:bg-slate-300 focus:text-black"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Email Address"
+              required
+            />
+          </div>
 
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Message"
-            required
-            className="input-field resize-y h-40"
-          ></textarea>
+          <div className="flex flex-col w-full gap-4 mb-4">
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Message"
+              required
+              className="m-2 resize-y textarea textarea-bordered bg-blue-950 focus:bg-slate-300 focus:text-black h-40 p-2 border rounded-md"
+            ></textarea>
+          </div>
 
           <button
             className="bg-yellow-400 text-black py-2 px-4 rounded-lg font-semibold transition-transform duration-200 hover:scale-105"

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="About"
-      className="flex items-center justify-center bg-gray-800 bg-cover bg-center text-white w-full py-16 relative overflow-hidden min-h-screen"
+      className="flex items-center justify-center bg-gray-800 bg-cover bg-center text-white w-full py-16 relative overflow-hidden min-h-screen "
       style={{ backgroundImage: 'url("../../assets/images/about.jpg")' }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
@@ -15,7 +15,7 @@ const About = () => {
           Hi, I'm <span className="text-xl md:text-2xl font-bold">Caleb Zwingli</span>, a passionate and detail-oriented software engineer with a focus on frontend development.
           I enjoy creating elegant solutions to complex problems and transforming ideas into intuitive user experiences.
         </p>
-        <p className="text-lg md:text-xl leading-relaxed mb-4">
+        <p className="text-md md:text-lg leading-relaxed mb-4">
           My skills include:
         </p>
         <ul className="list-none p-0 text-left inline-block">
