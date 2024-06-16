@@ -13,9 +13,9 @@ const Contact = () => {
       <h1 className="text-5xl font-bold mt-8 text-center">Get in touch!</h1>
       <div className="flex flex-col lg:flex-row justify-center items-center w-full max-w-screen-lg mt-8">
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start p-4">
-          <div className="border p-8 m-4 rounded-md w-full text-center lg:text-left">
+          <div className="border-spacing-2 p-8 m-4 rounded-md shadow-2xl bg-slate-900 w-full text-center lg:text-left">
             <h2 className="text-2xl mb-4">Socials</h2>
-            <div className="text-4xl md:text-4xl mt-8">
+            <div className="text-4xl gap-12 md:text-4xl mt-8">
               <a
                 href="https://www.linkedin.com/in/caleb-zwingli-566b5320b/"
                 target="_blank"
@@ -55,7 +55,7 @@ const Contact = () => {
           <div className="divider divider-horizontal"></div>
         </div>
         <div className="w-full lg:w-1/2 p-4">
-          <div className="max-w-md w-full p-6 shadow-lg rounded-md border mx-auto">
+          <div className="max-w-md w-full p-6 shadow-2xl rounded-md  mx-auto">
             <ContactForm />
           </div>
         </div>

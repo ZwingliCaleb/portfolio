@@ -8,7 +8,7 @@ import Portfolio from "./components/Portfolio";
 
 const App = () => {
   return (
-    <div className="app-container min-h-screen">
+    <div className="app-container min-h-screen font-sans">
       <Navbar />
       <HeroSection id="Home" />
       <About id="About" />

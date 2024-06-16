@@ -9,11 +9,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'josefin': ['"Josefin Sans"', 'sans-serif']
+        sans: ['Open Sans', 'sans-serif']
       },
     },
   },
   plugins: [
     daisyui,
   ],
-}
+};

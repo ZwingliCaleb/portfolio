@@ -59,7 +59,7 @@ const ContactForm = () => {
             <input
               type="text"
               id="name"
-              className="m-2 input input-bordered w-full max-w-xs bg-blue-950 focus:bg-slate-300 focus:text-black"
+              className="m-2 input input-bordered w-full max-w-xs bg-slate-900 focus:bg-slate-300 focus:text-black"
               name="name"
               value={formData.name}
               onChange={handleChange}
@@ -70,7 +70,7 @@ const ContactForm = () => {
             <input
               type="email"
               id="email"
-              className="m-2 input input-bordered w-full max-w-xs bg-blue-950 focus:bg-slate-300 focus:text-black"
+              className="m-2 input input-bordered w-full max-w-xs bg-slate-900 focus:bg-slate-300 focus:text-black"
               name="email"
               value={formData.email}
               onChange={handleChange}
@@ -87,7 +87,7 @@ const ContactForm = () => {
               onChange={handleChange}
               placeholder="Message"
               required
-              className="m-2 resize-y textarea textarea-bordered bg-blue-950 focus:bg-slate-300 focus:text-black h-40 p-2 border rounded-md"
+              className="m-2 textarea textarea-bordered bg-slate-900 focus:bg-slate-300 focus:text-black h-40 p-2 border rounded-md"
             ></textarea>
           </div>
 
