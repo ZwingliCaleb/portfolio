@@ -10,17 +10,17 @@ const Contact = () => {
       className="flex flex-col items-center min-h-screen bg-blue-950 text-white w-full py-20"
       id="Contact"
     >
-      <h1 className="text-5xl font-bold mt-8 text-center">Get in touch!</h1>
+      <h1 className="text-3xl md:text-4 xl font-bold mt-8 text-center">Get in touch!</h1>
       <div className="flex flex-col lg:flex-row justify-center items-center w-full max-w-screen-lg mt-8">
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start p-4">
           <div className="border-spacing-2 p-8 m-4 rounded-md shadow-2xl bg-slate-900 w-full text-center lg:text-left">
-            <h2 className="text-2xl mb-4">Socials</h2>
+            <h2 className="text-xl font-montserrat mb-4">My Social platforms</h2>
             <div className="text-4xl gap-12 md:text-4xl mt-8">
               <a
                 href="https://www.linkedin.com/in/caleb-zwingli-566b5320b/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-2 hover:text-yellow-500"
+                className="mx-2 hover:text-[#f23f67]"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
@@ -28,7 +28,7 @@ const Contact = () => {
                 href="https://github.com/ZwingliCaleb"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-2 hover:text-yellow-500"
+                className="mx-2 hover:text-[#f23f67]"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
@@ -36,7 +36,7 @@ const Contact = () => {
                 href="https://x.com/ZwingliCaleb?t=kn-uAh-mVC4Oz5y5rLU1bA&s=09"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-2 hover:text-yellow-500"
+                className="mx-2 hover:text-[#f23f67]"
               >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
@@ -44,7 +44,7 @@ const Contact = () => {
                 href="https://medium.com/@calebzwingli"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-2 hover:text-yellow-500"
+                className="mx-2 hover:text-[#f23f67]"
               >
                 <FontAwesomeIcon icon={faMedium} />
               </a>

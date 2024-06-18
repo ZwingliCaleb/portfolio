@@ -52,7 +52,7 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col max-w-lg mx-auto items-center">
       {success ? (
-        <div className="bg-blue-500 text-white py-2 px-4 rounded mb-4">Message sent successfully!</div>
+        <div className="bg-blue-700 text-white py-2 px-4 rounded mb-4">Message sent successfully!</div>
       ) : (
         <>
           <div className="flex flex-col md:flex-row md:justify-between w-full gap-4 mb-6">
@@ -92,7 +92,7 @@ const ContactForm = () => {
           </div>
 
           <button
-            className="bg-yellow-400 text-black py-2 px-4 rounded-lg font-semibold transition-transform duration-200 hover:scale-105"
+            className="bg-[#f23f67] text-black py-2 px-4 rounded-lg font-semibold transition-transform duration-200 hover:scale-105"
             type="submit"
             disabled={submitting}
           >
