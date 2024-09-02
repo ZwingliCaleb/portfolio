@@ -5,7 +5,7 @@ import projects from './projects.js';
 
 const Portfolio = () => {
   const handleDownloadResume = () => {
-    const resumeFile = "Software_Dev_Resume.pdf"; // Ensure the filename matches your actual resume file name
+    const resumeFile = "Software_Dev.pdf"; // Ensure the filename matches your actual resume file name
     const resumePath = process.env.PUBLIC_URL + `/${resumeFile}`;
 
     const link = document.createElement("a");
