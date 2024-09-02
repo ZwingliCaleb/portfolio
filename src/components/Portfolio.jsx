@@ -5,7 +5,7 @@ import projects from './projects.js';
 
 const Portfolio = () => {
   const handleDownloadResume = () => {
-    const resumeFile = "Software_Dev_Resume.pdf"; // Ensure the filename matches your actual resume file name
+    const resumeFile = "Software_Dev.pdf"; // Ensure the filename matches your actual resume file name
     const resumePath = process.env.PUBLIC_URL + `/${resumeFile}`;
 
     const link = document.createElement("a");
@@ -55,6 +55,7 @@ const Portfolio = () => {
           <ul className="text-sm font-montserrat font-semibold">
             <li>ALX-Africa Software Engineering</li>
             <li>Udacity-Bertelsmann: Agile Software Developer</li>
+            <li>AWS Certified Cloud Practitioner</li>
           </ul>
         </div>
       </div>
