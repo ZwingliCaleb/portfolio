@@ -55,6 +55,7 @@ const Portfolio = () => {
           <ul className="text-sm font-montserrat font-semibold">
             <li>ALX-Africa Software Engineering</li>
             <li>Udacity-Bertelsmann: Agile Software Developer</li>
+            <li>AWS Certified Cloud Practitioner</li>
           </ul>
         </div>
       </div>

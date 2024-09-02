@@ -8,7 +8,7 @@ const HeroSection = () => {
         <h1 className="text-6xl md:text-8xl font-bold my-8">
           I AM <span className="hover:text-white">ZWINGLI.</span>
         </h1>
-        <h2 className="text-2xl font-bold md:text-4xl mb-8">Software Engineer | Frontend Developer</h2>
+        <h2 className="text-2xl font-bold md:text-4xl mb-8">Software Engineer | Certified Cloud Practitioner</h2>
         <h3 className="text-xl md:text-3xl">Bit by bit, byte by byte: Crafting digital masterpieces.</h3>
       </div>
     </section>
