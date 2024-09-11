@@ -26,8 +26,11 @@ const Portfolio = () => {
           <h3 className="text-xl font-bold mb-4">Skills & Technologies</h3>
           <ul className="text-sm font-montserrat font-semibold">
             <li>React.js</li>
+            <li>Next.js</li>
             <li>JavaScript (ES6+)</li>
             <li>HTML5 & CSS3</li>
+            <li>Tailwind CSS</li> {/* Added Tailwind CSS */}
+            <li>AWS Cloud Practitioner</li> {/* Added AWS CCP */}
             <li>Git & GitHub</li>
             <li>Agile Methodologies</li>
             <li>Responsive Web Design</li>
@@ -55,7 +58,7 @@ const Portfolio = () => {
           <ul className="text-sm font-montserrat font-semibold">
             <li>ALX-Africa Software Engineering</li>
             <li>Udacity-Bertelsmann: Agile Software Developer</li>
-            <li>AWS Certified Cloud Practitioner</li>
+            <li>AWS Certified Cloud Practitioner</li> {/* Added AWS CCP */}
           </ul>
         </div>
       </div>
