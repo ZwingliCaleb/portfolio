@@ -15,6 +15,9 @@ const About = () => {
           Hi, I'm <span className="text-xl md:text-2xl font-semibold">Caleb Zwingli</span>, a passionate and detail-oriented software engineer with a focus on frontend development.
           I enjoy creating elegant solutions to complex problems and transforming ideas into intuitive user experiences.
         </p>
+        <p className="text-sm md:text-xl leading-relaxed mb-4">
+          Recently, I earned my <span className="font-semibold">AWS Certified Cloud Practitioner (CCP)</span> certification, further enhancing my understanding of cloud services and solutions.
+        </p>
         <p className="text-md md:text-lg leading-relaxed mb-4">
           My skills include:
         </p>
@@ -27,6 +30,12 @@ const About = () => {
           </li>
           <li className="text-base md:text-lg mb-2 flex items-center">
             <span className="mr-2 text-[#f23f67]">•</span>HTML5 & CSS3
+          </li>
+          <li className="text-base md:text-lg mb-2 flex items-center">
+            <span className="mr-2 text-[#f23f67]">•</span>Tailwind CSS {/* Added Tailwind CSS */}
+          </li>
+          <li className="text-base md:text-lg mb-2 flex items-center">
+            <span className="mr-2 text-[#f23f67]">•</span>AWS Cloud Practitioner {/* Added AWS CCP */}
           </li>
           <li className="text-base md:text-lg mb-2 flex items-center">
             <span className="mr-2 text-[#f23f67]">•</span>Git & GitHub
