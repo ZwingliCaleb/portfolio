@@ -16,7 +16,13 @@ const projects = [
         description: 'Dashboard sales personal use to track sales',
         link:'https://salesman-dashboard.vercel.app/',
         image: process.env.PUBLIC_URL + '/assets/images/sales.png',
-    }
+    },
+    {
+        title: 'React Hire',
+        description: 'Job board to find react devs, and post jobs',
+        link:'https://reacthire.netlify.app/',  
+        image: process.env.PUBLIC_URL + '/assets/images/reacthire.png',
+    },
 ];
 
 export default projects;
