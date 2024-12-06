@@ -1,7 +1,6 @@
 import React from "react";
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import projects from './projects.js';
+import ProjectsCarousel from "./ProjectsCarousel";
+import projects from "./projects";
 
 const Portfolio = () => {
   const handleDownloadResume = () => {
@@ -64,28 +63,7 @@ const Portfolio = () => {
       </div>
 
       <div className="mt-20">
-        <h3 className="text-2xl font-bold mb-12 text-center">My Projects</h3>
-        <Carousel
-          showThumbs={false}
-          autoPlay
-          infiniteLoop
-          showStatus={false}
-          className="max-w-3xl mx-auto"
-        >
-          {projects.map((project, index) => (
-            <div key={index} className="relative px-4 group">
-              <img src={project.image} alt={project.title} className="rounded-lg" />
-              <button
-                className="absolute inset-0 flex rounded-lg shadow-xl items-center justify-center bg-black bg-opacity-50 text-white text-lg font-semibold opacity-0 md:opacity-0 group-hover:opacity-100 md:group-hover:opacity-100 transition-opacity duration-300"
-                onClick={() => window.open(project.link, "_blank")}
-              >
-                View Details
-              </button>
-              <h4 className="text-xl font-semibold font-montserrat mt-4">{project.title}</h4>
-              <p className="text-sm font-montserrat mt-2">{project.description}</p>
-            </div>
-          ))}
-        </Carousel>
+        <ProjectsCarousel projects={projects} />
       </div>
     </section>
   );

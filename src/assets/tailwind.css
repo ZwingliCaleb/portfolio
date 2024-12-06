@@ -9,3 +9,19 @@ body {
     @apply font-sans;
     @apply font-montserrat;
 }
+
+.embla {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .embla__container {
+    display: flex;
+  }
+  
+  .embla__slide {
+    position: relative;
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
