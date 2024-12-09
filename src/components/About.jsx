@@ -1,3 +1,4 @@
+
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
 import Technologies from './Technologies';
 
