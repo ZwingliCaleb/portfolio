@@ -10,8 +10,8 @@ const Contact = () => {
       <div className="flex flex-col lg:flex-row justify-center items-center w-full max-w-screen-lg mt-8">
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start p-4">
           <div className="border-spacing-2 p-8 m-4 rounded-md shadow-2xl bg-slate-900 w-full text-center lg:text-left">
-            <h2 className="text-xl font-montserrat mb-4">My Social platforms</h2>
-            <div className="flex justify-center gap-8 sm:text-4xl mt-6">
+            <h2 className="text-center text-xl font-montserrat mb-4">My Social platforms</h2>
+            <div className="flex justify-center gap-8 text-3xl sm:text-4xl mt-6">
               <a
                 href="https://www.linkedin.com/in/caleb-zwingli-566b5320b/"
                 target="_blank"
