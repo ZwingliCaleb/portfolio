@@ -14,7 +14,7 @@ const ProjectsCarousel = () => {
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={40}
-        slidesPerView={1.5}
+        slidesPerView={1.3}
         navigation
         pagination={{ clickable: true }}
         centeredSlides={true}
@@ -24,7 +24,7 @@ const ProjectsCarousel = () => {
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-gray-800 rounded-lg shadow-lg p-6">
+            <div className="bg-gray-800 rounded-lg shadow-lg p-3 sm:p-4">
               <img
                 src={project.image}
                 alt={project.title}
@@ -35,9 +35,9 @@ const ProjectsCarousel = () => {
                 <p className="text-sm mb-4">{project.description}</p>
 
                 {/* Technologies Section */}
-                <div className="flex gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, i) => (
-                    <span key={i} className="px-2 py-1 text-xs bg-gray-700 rounded-md">
+                    <span key={i} className="px-3 py-1 text-xs sm:text-sm md:text-base bg-gray-700 rounded-md flex-shrink-0">
                       {tech}
                     </span>
                   ))}

@@ -45,10 +45,6 @@ const About = () => {
             <a href="tel:+254701256649" className="ml-2 text-[#f23f67] hover:underline">+254701256649</a>
           </p>
         </div>
-
-        <p className="text-sm md:text-xl mt-8 text-center">
-          <a href="#about-more" className="text-[#f23f67] hover:underline">More About Me</a>
-        </p>
       </div>
     </section>
   );

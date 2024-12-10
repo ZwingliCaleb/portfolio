@@ -14,10 +14,10 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="Portfolio" className="bg-gradient-to-b from-gray-950 via-blue-950 to-gray-900 text-white py-28 md:py-48 min-h-screen md:min-h-auto">
-      <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">Portfolio</h2>
+    <section id="Portfolio" className="bg-gradient-to-b from-gray-950 via-blue-950 to-gray-900 text-white py-20 sm:py-28 md:py-32 min-h-screen">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-10 text-center">Portfolio</h2>
 
-      <div className="flex flex-wrap justify-center gap-8 px-4 md:px-0">
+      <div className="flex flex-wrap justify-center gap-8 px-4 sm:px-0">
         {/* Experience Card */}
         <div className="max-w-sm bg-[#f23f67] text-black rounded-lg p-6 shadow-lg transform transition duration-500 hover:scale-105">
           <h3 className="text-xl font-bold mb-4">Experience</h3>
