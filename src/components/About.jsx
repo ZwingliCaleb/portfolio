@@ -11,25 +11,21 @@ const About = () => {
       <div className="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
       <div className="relative max-w-2xl text-center mx-auto z-10 p-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-5">About Me</h2>
+        
         <p className="text-sm md:text-xl leading-relaxed mb-4">
-          Hi, I'm <span className="text-xl md:text-2xl font-semibold">Caleb Zwingli</span>, a passionate frontend developer with a focus on creating intuitive, responsive user interfaces.
+          Hi, I'm <span className="text-xl md:text-2xl font-semibold">Caleb Zwingli</span>, a passionate frontend developer with a strong foundation in Computer Science. 
         </p>
 
         <p className="text-sm md:text-xl leading-relaxed mb-4">
-          I specialize in transforming ideas into seamless digital experiences with technologies such as <strong>React.js</strong>, <strong>JavaScript</strong>, and <strong>Tailwind CSS</strong>.
+          I specialize in building intuitive, responsive digital experiences using technologies like <strong>React.js</strong>, <strong>Next.js</strong>, <strong>JavaScript</strong>, and <strong>Tailwind CSS</strong>. My goal is to deliver seamless, user-centered interfaces that solve real-world problems.
         </p>
 
         <p className="text-sm md:text-xl leading-relaxed mb-4">
-          Key certifications:
+          I hold a <strong>Bachelor's degree in Computer Science</strong> from St. Paul's University, Kenya, and I’m always eager to learn and expand my knowledge to stay ahead in the fast-evolving tech landscape.
         </p>
-        <ul className="list-none p-0 text-left inline-block mb-4">
-          <li className="text-base md:text-lg mb-2 flex items-center">
-            <span className="mr-2 text-[#f23f67]">•</span>AWS Certified Cloud Practitioner (CCP)
-          </li>
-        </ul>
 
         <p className="text-sm md:text-xl leading-relaxed mb-4">
-          Constantly refining my skills and staying up-to-date with the latest in web technologies is what drives me. I'm always eager to learn and build the next big thing.
+          Constantly refining my skills and staying up-to-date with the latest in web technologies is what drives me. I'm passionate about building the next big thing and creating impactful digital products.
         </p>
 
         <div>

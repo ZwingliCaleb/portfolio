@@ -7,7 +7,7 @@ import { faLinkedin, faTwitter, faGithub, faMedium } from "@fortawesome/free-bra
 const Contact = () => {
   return (
     <section
-      className="flex flex-col items-center min-h-screen bg-blue-950 text-white w-full py-20"
+      className="flex flex-col items-center min-h-screen bg-gradient-to-b from-gray-900 via-blue-950 to-blue-950 text-white w-full py-20"
       id="Contact"
     >
       <h1 className="text-3xl md:text-4 xl font-bold mt-8 text-center">Get in touch!</h1>

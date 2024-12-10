@@ -1,0 +1,14 @@
+/* Custom fade effect for Swiper slides */
+.swiper-slide {
+    opacity: 0.5; /* Make the slides on the sides less visible */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .swiper-slide-active {
+    opacity: 1; /* Fully visible active slide */
+  }
+  
+  .swiper-slide-prev, .swiper-slide-next {
+    opacity: 0.7; /* Slightly less visible slides next to the active slide */
+  }
+  

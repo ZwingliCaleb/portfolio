@@ -1,71 +1,62 @@
-import React, { useCallback } from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import '../carousel.css';
+import projects from '../components/projects'; // Import the updated projects data
 
-const ProjectsCarousel = ({ projects }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000 })]);
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
-
+const ProjectsCarousel = () => {
   return (
-<<<<<<< HEAD
-    <div className="w-full max-w-4xl mx-auto">
-      <div className="embla" ref={emblaRef}>
-        <div className="embla__container flex">
-          {projects.map((project, index) => (
-            <div key={index} className="embla__slide min-w-full flex-shrink-0 mb-6">
-              <div className="p-4 bg-gray-800 rounded-lg shadow-lg text-white">
-                {/* Make the image clickable by wrapping it in an <a> tag */}
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-40 object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105"
-                  />
+    <section className="w-full py-16 bg-gradient-to-b from-blue-950 to-grey-900 text-white">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        spaceBetween={40}
+        slidesPerView={1.5}
+        navigation
+        pagination={{ clickable: true }}
+        centeredSlides={true}
+        loop={true}
+        grabCursor={true}
+        autoplay={{ delay: 5000 }}
+      >
+        {projects.map((project, index) => (
+          <SwiperSlide key={index}>
+            <div className="bg-gray-800 rounded-lg shadow-lg p-6">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="rounded-t-md object-cover w-full h-64"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                <p className="text-sm mb-4">{project.description}</p>
+
+                {/* Technologies Section */}
+                <div className="flex gap-2 mb-4">
+                  {project.technologies.map((tech, i) => (
+                    <span key={i} className="px-2 py-1 text-xs bg-gray-700 rounded-md">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 text-sm font-bold hover:underline"
+                >
+                  View Project
                 </a>
-                <h3 className="mt-4 text-lg font-semibold">{project.title}</h3>
-                <p className="mt-2 text-sm text-gray-700">{project.description}</p>
-=======
-    <div className="w-full max-w-6xl mx-auto">
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex">
-          {projects.map((project, index) => (
-            <div key={index} className="min-w-full flex-shrink-0 mb-6">
-              <div className="p-4 bg-gray-800 rounded-lg shadow-lg text-white">
-                {/* Wrap the image in an <a> tag to make it clickable */}
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="block transition-transform transform hover:scale-105">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-40 object-cover rounded-lg"
-                  />
-                </a>
-                <h3 className="mt-4 text-lg font-semibold">{project.title}</h3>
-                <p className="mt-2 text-sm text-gray-400">{project.description}</p>
->>>>>>> fresh-styling
               </div>
             </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Navigation Buttons */}
-      <div className="flex justify-between mt-4">
-        <button
-          onClick={scrollPrev}
-          className="px-4 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors"
-        >
-          Prev
-        </button>
-        <button
-          onClick={scrollNext}
-          className="px-4 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors"
-        >
-          Next
-        </button>
-      </div>
-    </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   );
 };
 
