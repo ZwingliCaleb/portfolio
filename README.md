@@ -65,3 +65,7 @@ This project is licensed under the [MIT License](LICENSE).
 - [React](https://reactjs.org/) - JavaScript library for building user interfaces.
 - [Formspree](https://formspree.io/) - Form backend service for processing form submissions.
 - [FontAwesome](https://fontawesome.com/) - Icon library for adding icons to the website.
+- [React Icons](https://react-icons.github.io/react-icons/) – Icon library for React.
+- [Framer Motion](https://www.framer.com/motion/) – Animation library for React.
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework for styling.
+
