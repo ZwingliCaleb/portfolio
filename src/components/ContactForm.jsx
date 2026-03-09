@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Input, Textarea, Button } from "@nextui-org/react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -50,54 +51,102 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col max-w-lg mx-auto items-center">
+    <form onSubmit={handleSubmit} className="flex flex-col w-full mx-auto items-center gap-6">
       {success ? (
-        <div className="bg-blue-700 text-white py-2 px-4 rounded mb-4">Message sent successfully!</div>
+        <div className="bg-success-100/20 text-success-500 border border-success-500/50 py-3 px-6 rounded-lg w-full text-center backdrop-blur-sm">
+          Message sent successfully!
+        </div>
       ) : (
         <>
-          <div className="flex flex-col md:flex-row md:justify-between w-full gap-4 mb-6">
-            <input
+          <div className="flex flex-col md:flex-row w-full gap-4">
+            <Input
               type="text"
               id="name"
-              className="m-2 input input-bordered w-full max-w-xs bg-slate-900 focus:bg-slate-300 focus:text-black"
               name="name"
               value={formData.name}
               onChange={handleChange}
+              aria-label="Name"
               placeholder="Name"
-              required
+              variant="bordered"
+              isRequired
+              classNames={{
+                input: [
+                  "text-white",
+                  "placeholder:text-gray-500",
+                ],
+                label: "text-gray-400 font-semibold group-data-[filled=true]:text-[#f23f67]",
+                inputWrapper: [
+                  "border-gray-700",
+                  "hover:border-[#f23f67]",
+                  "group-data-[focus=true]:border-[#f23f67]",
+                  "bg-gray-900/50",
+                  "transition-colors"
+                ]
+              }}
             />
 
-            <input
+            <Input
               type="email"
               id="email"
-              className="m-2 input input-bordered w-full max-w-xs bg-slate-900 focus:bg-slate-300 focus:text-black"
               name="email"
               value={formData.email}
               onChange={handleChange}
+              aria-label="Email Address"
               placeholder="Email Address"
-              required
+              variant="bordered"
+              isRequired
+              classNames={{
+                input: [
+                  "text-white",
+                  "placeholder:text-gray-500",
+                ],
+                label: "text-gray-400 font-semibold group-data-[filled=true]:text-[#f23f67]",
+                inputWrapper: [
+                  "border-gray-700",
+                  "hover:border-[#f23f67]",
+                  "group-data-[focus=true]:border-[#f23f67]",
+                  "bg-gray-900/50",
+                  "transition-colors"
+                ]
+              }}
             />
           </div>
 
-          <div className="flex flex-col w-full gap-4 mb-4">
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Message"
-              required
-              className="m-2 textarea textarea-bordered bg-slate-900 focus:bg-slate-300 focus:text-black h-40 p-2 border rounded-md"
-            ></textarea>
-          </div>
+          <Textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            aria-label="Message"
+            placeholder="Message"
+            variant="bordered"
+            minRows={6}
+            isRequired
+            classNames={{
+              input: [
+                "text-white",
+                "placeholder:text-gray-500",
+              ],
+              label: "text-gray-400 font-semibold group-data-[filled=true]:text-[#f23f67]",
+              inputWrapper: [
+                "border-gray-700",
+                "hover:border-[#f23f67]",
+                "group-data-[focus=true]:border-[#f23f67]",
+                "bg-gray-900/50",
+                "transition-colors"
+              ]
+            }}
+          />
 
-          <button
-            className="bg-[#f23f67] text-black py-2 px-4 rounded-lg font-semibold transition-transform duration-200 hover:scale-105"
+          <Button
             type="submit"
-            disabled={submitting}
+            isLoading={submitting}
+            className="bg-[#f23f67] text-white font-bold w-full md:w-auto px-10 shadow-lg shadow-[#f23f67]/30"
+            radius="full"
+            size="lg"
           >
             {submitting ? 'Sending...' : 'Send Message'}
-          </button>
+          </Button>
         </>
       )}
     </form>

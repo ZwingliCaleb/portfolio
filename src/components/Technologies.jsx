@@ -1,5 +1,7 @@
 import { FaReact, FaHtml5, FaGithub, FaCss3Alt, FaAws } from 'react-icons/fa'; 
 import { IoLogoJavascript } from 'react-icons/io5';
+import { SiKubernetes } from "react-icons/si";
+import { FaDatabase } from "react-icons/fa6"; // Fallback for Oracle
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 
 const Technologies = () => {
@@ -12,6 +14,8 @@ const Technologies = () => {
     { icon: <FaCss3Alt size={40} className="text-[#1572B6]" />, name: 'CSS3' },
     { icon: <FaAws size={40} className="text-[#FF9900]" />, name: 'AWS' },
     { icon: <RiNextjsFill size={40} className="text-[#ffffff]" />, name: 'Next.js' }, 
+    { icon: <SiKubernetes size={40} className="text-[#326CE5]" />, name: 'Kubernetes' },
+    { icon: <FaDatabase size={40} className="text-[#F80000]" />, name: 'Oracle Cloud' },
   ];
 
   return (
