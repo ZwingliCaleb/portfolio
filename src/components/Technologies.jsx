@@ -1,4 +1,4 @@
-import { FaReact, FaHtml5, FaGithub, FaCss3Alt, FaAws } from 'react-icons/fa'; 
+import { FaReact, FaHtml5, FaGithub, FaCss3Alt, FaAws, FaPython } from 'react-icons/fa'; 
 import { IoLogoJavascript } from 'react-icons/io5';
 import { SiKubernetes } from "react-icons/si";
 import { FaDatabase } from "react-icons/fa6"; // Fallback for Oracle
@@ -16,10 +16,11 @@ const Technologies = () => {
     { icon: <RiNextjsFill size={40} className="text-[#ffffff]" />, name: 'Next.js' }, 
     { icon: <SiKubernetes size={40} className="text-[#326CE5]" />, name: 'Kubernetes' },
     { icon: <FaDatabase size={40} className="text-[#F80000]" />, name: 'Oracle Cloud' },
+    { icon: <FaPython size={40} className="text-[#3776AB]" />, name: 'Python' },
   ];
 
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 lg:grid-cols-8 justify-center items-center">
+    <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-11 gap-6 justify-center items-center">
       {techStack.map((tech, index) => (
         <div 
           key={index} 

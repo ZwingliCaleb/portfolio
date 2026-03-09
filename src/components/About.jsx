@@ -12,9 +12,9 @@ const About = () => {
     <section
       id="About"
       className="flex items-center justify-center bg-gray-800 bg-cover bg-center text-white w-full py-16 relative overflow-hidden min-h-screen"
-      style={{ backgroundImage: 'url("../../assets/images/about.jpg")' }}
+      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/about.jpg)` }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
       <motion.div 
         className="relative max-w-2xl text-center mx-auto z-10 p-8"
         initial="hidden"
@@ -28,19 +28,11 @@ const About = () => {
         <motion.h2 variants={scrollVariants} className="text-3xl md:text-4xl font-bold mb-5 text-[#f23f67]">About Me</motion.h2>
         
         <motion.p variants={scrollVariants} className="text-sm md:text-xl leading-relaxed mb-4 text-gray-300">
-          Hi, I'm <span className="text-xl md:text-2xl font-semibold text-white">Caleb Zwingli</span>, a passionate frontend developer with a strong foundation in Computer Science. 
-        </motion.p>
-
-        <motion.p variants={scrollVariants} className="text-sm md:text-xl leading-relaxed mb-4 text-gray-300">
-          I specialize in building intuitive, responsive digital experiences using technologies like <strong>React.js</strong>, <strong>Next.js</strong>, <strong>JavaScript</strong>, and <strong>Tailwind CSS</strong>. My goal is to deliver seamless, user-centered interfaces that solve real-world problems.
-        </motion.p>
-
-        <motion.p variants={scrollVariants} className="text-sm md:text-xl leading-relaxed mb-4 text-gray-300">
-          I hold a <strong>Bachelor's degree in Computer Science</strong> from St. Paul's University, Kenya, and I’m always eager to learn and expand my knowledge to stay ahead in the fast-evolving tech landscape.
+          Hi, I'm <span className="text-xl md:text-2xl font-semibold text-white">Caleb Zwingli</span> — a software engineer with a Bachelor's in Computer Science from St. Paul's University, Kenya, currently pursuing a <strong>Master's in Computer Science</strong> at <strong>Multimedia University of Kenya</strong>. I build fast, intuitive, and responsive digital products that make a real impact.
         </motion.p>
 
         <motion.p variants={scrollVariants} className="text-sm md:text-xl leading-relaxed mb-8 text-gray-300">
-          Constantly refining my skills and staying up-to-date with the latest in web technologies is what drives me. I'm passionate about building the next big thing and creating impactful digital products.
+          I specialize in <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Kubernetes</strong>, and cloud platforms including <strong>AWS</strong> and <strong>Oracle Cloud</strong>. I'm currently doing software development at <strong>Crysoft Solutions</strong> and I'm always eager to tackle the next big challenge in tech.
         </motion.p>
 
         <motion.div variants={scrollVariants} className="bg-gray-900/50 p-6 rounded-2xl backdrop-blur-sm border border-gray-800 shadow-xl">

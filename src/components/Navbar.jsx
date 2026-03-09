@@ -15,6 +15,7 @@ export default function Navbar() {
 
   return (
     <NextUINavbar 
+      isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen} 
       maxWidth="full"
       className="bg-gray-950/70 backdrop-blur-md text-white fixed w-full z-50 h-24"
