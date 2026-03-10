@@ -12,7 +12,7 @@ const Footer = () => {
         
         {/* Brand & Tagline */}
         <div className="text-center md:text-left">
-          <p className="text-2xl font-bold text-[#f23f67] font-montserrat">Zwingli.</p>
+          <p className="text-md font-bold text-[#f23f67] font-montserrat">ZWINGLI.</p>
           <p className="text-gray-400 text-sm mt-1">Built with React & ☕</p>
         </div>
 
