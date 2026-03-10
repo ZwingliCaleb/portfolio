@@ -7,8 +7,8 @@ const articles = [
     title: 'Getting Started with Kubernetes: A Beginner\'s Guide',
     description: 'Kubernetes can feel overwhelming at first. In this article, I break down core concepts — pods, services, deployments — with real examples to get you up and running fast.',
     tag: 'Cloud Native',
-    link: 'https://medium.com/@calebzwingli',
-    date: '2024',
+    link: 'https://medium.com/@calebzwingli/getting-started-with-kubernetes-a-beginners-guide-lessons-from-my-recent-kcna-certification-1921ef5cec95?postPublishedType=repub',
+    date: '2026',
   },
   {
     title: 'Why Every Frontend Dev Should Learn Cloud Basics',
