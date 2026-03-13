@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faTwitter, faGithub, faMedium } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faXTwitter, faGithub, faMedium } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -56,9 +56,9 @@ const Contact = () => {
                   href="https://x.com/ZwingliCaleb?t=kn-uAh-mVC4Oz5y5rLU1bA&s=09"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-[#1DA1F2] hover:-translate-y-1 transition-all duration-300"
+                  className="text-gray-400 hover:text-white hover:-translate-y-1 transition-all duration-300"
                 >
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon icon={faXTwitter} />
                 </a>
                 <a
                   href="https://medium.com/@calebzwingli"

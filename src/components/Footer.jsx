@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faTwitter, faGithub, faMedium } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faXTwitter, faGithub, faMedium } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="flex gap-5 text-xl">
           <a href="https://www.linkedin.com/in/caleb-zwingli-566b5320b/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0A66C2] hover:-translate-y-1 transition-all duration-300"><FontAwesomeIcon icon={faLinkedin} /></a>
           <a href="https://github.com/ZwingliCaleb" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:-translate-y-1 transition-all duration-300"><FontAwesomeIcon icon={faGithub} /></a>
-          <a href="https://x.com/ZwingliCaleb?t=kn-uAh-mVC4Oz5y5rLU1bA&s=09" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#1DA1F2] hover:-translate-y-1 transition-all duration-300"><FontAwesomeIcon icon={faTwitter} /></a>
+          <a href="https://x.com/ZwingliCaleb?t=kn-uAh-mVC4Oz5y5rLU1bA&s=09" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:-translate-y-1 transition-all duration-300"><FontAwesomeIcon icon={faXTwitter} /></a>
           <a href="https://medium.com/@calebzwingli" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:-translate-y-1 transition-all duration-300"><FontAwesomeIcon icon={faMedium} /></a>
         </div>
       </div>
