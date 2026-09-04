@@ -1,89 +1,176 @@
-import React from "react";
-import ContactForm from "./ContactForm";
+import React, { useState } from 'react';
+import { 
+  Mail, 
+  Phone, 
+  Copy, 
+  Check, 
+  Sparkles, 
+  Clock, 
+  ExternalLink 
+} from 'lucide-react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faXTwitter, faGithub, faMedium } from "@fortawesome/free-brands-svg-icons";
-import { motion } from "framer-motion";
+import ContactForm from './ContactForm';
 
 const Contact = () => {
-  const scrollVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText('calebzwingli@gmail.com');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2500);
   };
 
+  const socialLinks = [
+    {
+      name: 'LinkedIn',
+      icon: <FontAwesomeIcon icon={faLinkedin} />,
+      url: 'https://www.linkedin.com/in/caleb-zwingli-566b5320b/',
+      color: 'hover:text-[#0A66C2] hover:border-[#0A66C2]/50'
+    },
+    {
+      name: 'GitHub',
+      icon: <FontAwesomeIcon icon={faGithub} />,
+      url: 'https://github.com/ZwingliCaleb',
+      color: 'hover:text-white hover:border-white/50'
+    },
+    {
+      name: 'X (Twitter)',
+      icon: <FontAwesomeIcon icon={faXTwitter} />,
+      url: 'https://x.com/ZwingliCaleb?t=kn-uAh-mVC4Oz5y5rLU1bA&s=09',
+      color: 'hover:text-white hover:border-white/50'
+    },
+    {
+      name: 'Medium',
+      icon: <FontAwesomeIcon icon={faMedium} />,
+      url: 'https://medium.com/@calebzwingli',
+      color: 'hover:text-emerald-400 hover:border-emerald-400/50'
+    },
+  ];
+
   return (
-    <section className="flex flex-col items-center min-h-screen bg-gradient-to-b from-gray-900 via-blue-950 to-blue-950 text-white w-full py-16 sm:py-20 overflow-hidden" id="Contact">
-      <motion.div 
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
-        }}
-        className="w-full max-w-screen-lg px-4 sm:px-6"
-      >
-        <motion.h1 variants={scrollVariants} className="text-4xl sm:text-5xl font-bold mt-8 mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-indigo-500">
-          Get in touch!
-        </motion.h1>
-        <motion.p variants={scrollVariants} className="text-center text-gray-400 mb-12 text-lg">Let's build something amazing together.</motion.p>
+    <section id="Contact" className="py-24 px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto">
         
-        <div className="flex flex-col lg:flex-row justify-center items-stretch w-full gap-8 lg:gap-12">
-          {/* Social Platforms Card */}
-          <motion.div variants={scrollVariants} className="w-full lg:w-5/12 flex">
-            <div className="bg-gray-900/60 backdrop-blur-md rounded-2xl border border-gray-800 shadow-xl p-8 w-full flex flex-col justify-center text-center lg:text-left hover:border-[#f23f67]/30 transition-colors duration-300">
-              <h2 className="text-2xl font-bold font-montserrat mb-6 text-white">Connect with me</h2>
-              <p className="text-gray-400 mb-8 leading-relaxed">
-                Whether you have a question, a project idea, or just want to say hi, feel free to drop a message or connect with me via social media!
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-[#f23f67] mb-3">
+            <Sparkles size={13} />
+            <span>COMMUNICATION CHANNELS</span>
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-black font-montserrat text-white tracking-tight">
+            Initiate <span className="text-[#f23f67] glow-text-magenta">Contact</span>
+          </h2>
+          <p className="text-slate-400 mt-4 text-base sm:text-lg">
+            Have a project, open position, cloud challenge, or just want to connect? Let's talk.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          
+          {/* Left Column: Direct Connect & Channels */}
+          <div className="lg:col-span-5 space-y-6">
+            
+            {/* Direct Connect Card */}
+            <div className="p-8 rounded-3xl glass-panel border border-slate-800 shadow-glass space-y-6">
+              <h3 className="text-2xl font-bold font-montserrat text-white">
+                Direct Channels
+              </h3>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                I am currently open to software engineering roles, cloud native contracts, and technical consulting.
               </p>
-              <div className="flex justify-center lg:justify-start gap-6 text-3xl">
-                <a
-                  href="https://www.linkedin.com/in/caleb-zwingli-566b5320b/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-[#0A66C2] hover:-translate-y-1 transition-all duration-300"
+
+              {/* Email Copy Card */}
+              <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3 overflow-hidden">
+                  <span className="p-2 rounded-xl bg-slate-800 text-[#f23f67] flex-shrink-0">
+                    <Mail size={18} />
+                  </span>
+                  <div className="truncate">
+                    <div className="text-[10px] font-mono text-slate-400 uppercase">Direct Email</div>
+                    <a
+                      href="mailto:calebzwingli@gmail.com"
+                      className="text-sm font-mono text-white hover:text-[#f23f67] transition-colors truncate block"
+                    >
+                      calebzwingli@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <button
+                  onClick={handleCopyEmail}
+                  className="p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors flex-shrink-0"
+                  title="Copy email to clipboard"
                 >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-                <a
-                  href="https://github.com/ZwingliCaleb"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white hover:-translate-y-1 transition-all duration-300"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a
-                  href="https://x.com/ZwingliCaleb?t=kn-uAh-mVC4Oz5y5rLU1bA&s=09"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white hover:-translate-y-1 transition-all duration-300"
-                >
-                  <FontAwesomeIcon icon={faXTwitter} />
-                </a>
-                <a
-                  href="https://medium.com/@calebzwingli"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white hover:-translate-y-1 transition-all duration-300"
-                >
-                  <FontAwesomeIcon icon={faMedium} />
-                </a>
+                  {copied ? <Check size={16} className="text-emerald-400" /> : <Copy size={16} />}
+                </button>
+              </div>
+
+              {/* Phone Card */}
+              <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <span className="p-2 rounded-xl bg-slate-800 text-cyan-400 flex-shrink-0">
+                    <Phone size={18} />
+                  </span>
+                  <div>
+                    <div className="text-[10px] font-mono text-slate-400 uppercase">Voice / WhatsApp</div>
+                    <a
+                      href="tel:+254701256649"
+                      className="text-sm font-mono text-white hover:text-cyan-400 transition-colors"
+                    >
+                      +254 701 256 649
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Response SLA badge */}
+              <div className="pt-4 border-t border-slate-800 flex items-center gap-2 text-xs font-mono text-slate-400">
+                <Clock size={14} className="text-emerald-400" />
+                <span>Typical response time: &lt; 24 hours</span>
               </div>
             </div>
-          </motion.div>
 
-          <div className="hidden lg:flex flex-col justify-center items-center opacity-50">
-            <div className="w-px h-full bg-gradient-to-b from-transparent via-gray-600 to-transparent"></div>
+            {/* Social Grid */}
+            <div className="p-6 rounded-3xl glass-panel border border-slate-800 shadow-glass">
+              <h4 className="text-xs font-mono uppercase text-slate-400 mb-4 tracking-wider">
+                Digital Presence & Networks
+              </h4>
+              <div className="grid grid-cols-2 gap-3">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.name}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center gap-3 p-3.5 rounded-2xl bg-slate-900/70 border border-slate-800 text-slate-300 text-sm font-semibold transition-all group ${social.color}`}
+                  >
+                    <span className="text-lg">{social.icon}</span>
+                    <span className="flex-1 text-xs font-mono">{social.name}</span>
+                    <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </a>
+                ))}
+              </div>
+            </div>
+
           </div>
 
-          {/* Contact Form Card */}
-          <motion.div variants={scrollVariants} className="w-full lg:w-7/12 flex">
-            <div className="bg-gray-900/60 backdrop-blur-md rounded-2xl border border-gray-800 shadow-xl p-8 w-full hover:border-[#f23f67]/30 transition-colors duration-300">
-              <ContactForm />
+          {/* Right Column: Form */}
+          <div className="lg:col-span-7 p-8 sm:p-10 rounded-3xl glass-panel border border-slate-800 shadow-glass">
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold font-montserrat text-white">
+                Send a Message
+              </h3>
+              <p className="text-xs font-mono text-slate-400 mt-1">
+                Drop your note below and it will be delivered directly to Caleb.
+              </p>
             </div>
-          </motion.div>
+            <ContactForm />
+          </div>
+
         </div>
-      </motion.div>
+
+      </div>
     </section>
   );
 };

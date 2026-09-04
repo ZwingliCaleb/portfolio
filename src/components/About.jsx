@@ -1,55 +1,109 @@
-import { FaEnvelope, FaPhone } from 'react-icons/fa';
-import Technologies from './Technologies';
+import React from 'react';
 import { motion } from 'framer-motion';
+import { MapPin, GraduationCap, Briefcase, Server, Layout, Sparkles } from 'lucide-react';
 
 const About = () => {
-  const scrollVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
-  };
+  const focusAreas = [
+    {
+      icon: <Server className="w-6 h-6 text-cyan-400" />,
+      title: 'Cloud Native & Orchestration',
+      description: 'Architecting resilient workloads with Kubernetes (KCNA), Docker containers, and multi-cloud environments across AWS and Oracle Cloud.'
+    },
+    {
+      icon: <Layout className="w-6 h-6 text-[#f23f67]" />,
+      title: 'Modern Frontend Engineering',
+      description: 'Building blazing-fast web applications with React 18, Next.js, Tailwind CSS, TypeScript, and fluid micro-interactions.'
+    },
+    {
+      icon: <GraduationCap className="w-6 h-6 text-purple-400" />,
+      title: 'Computer Science Research',
+      description: 'Pursuing a Master\'s in Computer Science at Multimedia University of Kenya, diving into distributed computing, scalability, and cloud architecture.'
+    }
+  ];
 
   return (
-    <section
-      id="About"
-      className="flex items-center justify-center bg-gray-800 bg-cover bg-center text-white w-full py-16 relative overflow-hidden min-h-screen"
-      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/about.jpg)` }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
-      <motion.div 
-        className="relative max-w-2xl text-center mx-auto z-10 p-8"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
-        }}
-      >
-        <motion.h2 variants={scrollVariants} className="text-3xl md:text-4xl font-bold mb-5 text-[#f23f67]">About Me</motion.h2>
+    <section id="About" className="py-24 px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto">
         
-        <motion.p variants={scrollVariants} className="text-sm md:text-xl leading-relaxed mb-4 text-gray-300">
-          Hi, I'm <span className="text-xl md:text-2xl font-semibold text-white">Caleb Zwingli</span> — a software engineer with a Bachelor's in Computer Science from St. Paul's University, Kenya, currently pursuing a <strong>Master's in Computer Science</strong> at <strong>Multimedia University of Kenya</strong>. I build fast, intuitive, and responsive digital products that make a real impact.
-        </motion.p>
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-[#f23f67] mb-3">
+            <Sparkles size={13} />
+            <span>ENGINEERING PROFILE</span>
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-black font-montserrat text-white tracking-tight">
+            About <span className="text-[#f23f67]">Caleb Zwingli</span>
+          </h2>
+          <p className="text-slate-400 mt-4 text-base sm:text-lg leading-relaxed">
+            Software engineer passionate about the intersection of high-performance frontend interfaces and rock-solid cloud infrastructure.
+          </p>
+        </div>
 
-        <motion.p variants={scrollVariants} className="text-sm md:text-xl leading-relaxed mb-8 text-gray-300">
-          I specialize in <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Kubernetes</strong>, and cloud platforms including <strong>AWS</strong> and <strong>Oracle Cloud</strong>. I'm currently doing software development at <strong>Crysoft Solutions</strong> and I'm always eager to tackle the next big challenge in tech.
-        </motion.p>
+        {/* Two-Column Overview */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          {/* Narrative Glass Card */}
+          <div className="lg:col-span-7 p-8 sm:p-10 rounded-3xl glass-panel border border-slate-800 shadow-glass space-y-5 leading-relaxed text-slate-300 text-base">
+            <h3 className="text-2xl font-bold font-montserrat text-white">
+              Designing scalable solutions with passion & precision
+            </h3>
 
-        <motion.div variants={scrollVariants} className="bg-gray-900/50 p-6 rounded-2xl backdrop-blur-sm border border-gray-800 shadow-xl">
-          <Technologies />
-        </motion.div>
+            <p>
+              I hold a <strong>Bachelor of Science in Computer Science</strong> from <span className="text-white font-semibold">St. Paul's University</span> and am currently advancing my knowledge through a <strong className="text-cyan-400">Master of Science in Computer Science</strong> at <span className="text-white font-semibold">Multimedia University of Kenya</span>.
+            </p>
 
-        <motion.div variants={scrollVariants} className="mt-12 flex flex-col md:flex-row justify-center gap-6">
-          <a href="mailto:calebzwingli@gmail.com" className="flex items-center justify-center bg-gray-900/80 hover:bg-[#f23f67]/20 border border-gray-700 hover:border-[#f23f67] px-6 py-3 rounded-full transition-all duration-300 group">
-            <FaEnvelope className="mr-3 text-[#f23f67] group-hover:scale-110 transition-transform duration-300" />
-            <span className="text-gray-300 group-hover:text-white">calebzwingli@gmail.com</span>
-          </a>
-          <a href="tel:+254701256649" className="flex items-center justify-center bg-gray-900/80 hover:bg-[#f23f67]/20 border border-gray-700 hover:border-[#f23f67] px-6 py-3 rounded-full transition-all duration-300 group">
-            <FaPhone className="mr-3 text-[#f23f67] group-hover:scale-110 transition-transform duration-300" />
-            <span className="text-gray-300 group-hover:text-white">+254701256649</span>
-          </a>
-        </motion.div>
-      </motion.div>
+            <p>
+              As a Software Developer at <strong className="text-white">Crysoft Solutions</strong>, I build intuitive client applications, optimize API performance, and deploy scalable cloud workloads. My background also includes intensive software engineering training at <strong>ALX-Africa</strong> and engineering internships at the <strong>World Agroforestry Centre (ICRAF)</strong>.
+            </p>
+
+            <p>
+              Whether orchestrating container pods with <strong>Kubernetes</strong>, deploying serverless APIs on <strong>AWS</strong>, or crafting delightful UI states with <strong>React</strong>, I approach every challenge with curiosity, clean architecture principles, and a relentless focus on user experience.
+            </p>
+
+            {/* Quick Contact & Details Strip */}
+            <div className="pt-6 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono text-xs text-slate-300">
+              <div className="flex items-center gap-2">
+                <MapPin size={16} className="text-[#f23f67]" />
+                <span>Nairobi, Kenya</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Briefcase size={16} className="text-cyan-400" />
+                <span>Crysoft Solutions</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <GraduationCap size={16} className="text-purple-400" />
+                <span>MSc Candidate</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Key Focus Cards */}
+          <div className="lg:col-span-5 flex flex-col gap-4">
+            {focusAreas.map((area, idx) => (
+              <div
+                key={idx}
+                className="p-6 rounded-2xl glass-panel border border-slate-800 hover:border-slate-700 transition-all duration-200 group hover:-translate-y-0.5"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-slate-900 border border-slate-800 group-hover:border-[#f23f67]/30 transition-colors flex-shrink-0">
+                    {area.icon}
+                  </div>
+                  <div>
+                    <h4 className="text-base font-bold font-montserrat text-white group-hover:text-[#f23f67] transition-colors">
+                      {area.title}
+                    </h4>
+                    <p className="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                      {area.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+
+      </div>
     </section>
   );
 };
