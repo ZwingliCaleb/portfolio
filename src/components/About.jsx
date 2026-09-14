@@ -22,8 +22,15 @@ const About = () => {
   ];
 
   return (
-    <section id="About" className="py-24 px-4 sm:px-6 lg:px-8 relative z-10">
-      <div className="max-w-7xl mx-auto">
+    <section id="About" className="py-24 px-4 sm:px-6 lg:px-8 relative z-10 overflow-hidden">
+      {/* Subtle Atmospheric Background Image Overlay */}
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center opacity-10 pointer-events-none filter grayscale contrast-125 mix-blend-luminosity"
+        style={{ backgroundImage: "url('/assets/images/about.jpg')" }}
+      />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-slate-950 via-slate-950/90 to-slate-950 pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
